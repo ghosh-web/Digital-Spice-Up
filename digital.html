@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expert digital marketing services including SEO, social media marketing, performance marketing, lead generation, and influencer marketing. Drive growth with Digital Spice Up.">
+
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- font awsome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/digital.css">
+  <link rel="stylesheet" href="./css/back-to-top.css">
+  <title>Digital Marketing Services | Digital Spice Up</title>
+</head>
+
+<body>
+  <!-- nav start -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="./index.html"> <img src="./img/digital-spiceup.webp"
+            alt="Digital Spice Up Logo" class="me-2"></a>
+
+
+        <button class="navbar-toggler" type="button" onclick="showSideBar()">
+          ☰
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-block">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+                <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+                <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+                <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+                <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+                <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+                <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="casestudy.html">Case Study</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-btn ms-lg-3" href="contact.html">Let’s Chat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="sidebarOverlay" class="sidebar-overlay d-none">
+      <div id="sidebar" class="sidebar">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <a class="navbar-brand fw-bold text-primary" href="#"> <img src="./img/digital-spiceup.webp"
+              alt="Digital Spice Up Logo" class="me-2"></a>
+          <button class="btn btn-sm btn-outline-secondary" onclick="closeSidebar()">✖</button>
+        </div>
+
+        <ul class="list-unstyled">
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+
+          <li class="menu-item" onclick="toggleServices()">Services ▸</li>
+          <ul id="serviceMenu" class="list-unstyled submenu d-none">
+            <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+            <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+            <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+            <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+            <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+            <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+            <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+          </ul>
+
+          <li class="menu-item"><a href="casestudy.html">Case Study</a></li>
+          <li class="menu-item"><a href="blog.html">Blog</a></li>
+          <li class="menu-item cta"><a href="contact.html">Let’s Chat</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- nav end -->
+
+  <!-- loader start -->
+  <div class="loader-wrapper">
+    <div class="dot-loader">
+      <img src="./img/favicon.png" alt="">
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- loader end -->
+
+  <!-- banner start -->
+  <section class="dg-banner"
+    style=" position: relative; width: 100%; height: 450px; overflow: hidden; background-size: contain;">
+    <div style="width: 100%; height: 100%; position: relative;">
+      <video autoplay muted loop playsinline
+        style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; transform: translate(-50%, -50%);">
+        <source src="./assets/video/digital.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="dg-content">
+        <h1>Digital Marketing
+        </h1>
+        <p>From visibility to profitability – we make it
+          happen</p>
+      </div>
+    </div>
+  </section>
+  <!-- banner end -->
+  <!-- about-digital start -->
+  <section class="digitalmarketing section_padding">
+    <div class="container">
+      <div class="digitalmarketing-head text-center">
+        <h2>Data-Driven <span class="typing-text"> Impact-Focused</span> Unstoppable</h2>
+        <p>We harness the power of data and creativity to craft strategies that deliver measurable impact,
+          driving unstoppable growth for your brand in the digital world.
+          Every campaign is built to perform, adapt, and keep your brand ahead of the curve.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- end -->
+
+  <!-- planning start -->
+
+  <section class="transform-section section_padding">
+    <div class="container">
+      <div class="transform-row">
+
+        <!-- Left Column -->
+        <div class="transform-column mt-1 ">
+          <h2 class="thead">From Start To Finish</h2>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Research & Strategy</h4>
+              <p>Conducting market research and competitor analysis to craft winning strategy.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Content Planning</h4>
+              <p>Creating content calendars and campaigns aligned with brand voice.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>SEO Optimization</h4>
+              <p>Optimize your website and content to boost search rankings organically.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Paid Advertising</h4>
+              <p>Running targeted ads on Google, Facebook, and Instagram to generate leads.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Social Media Management</h4>
+              <p>Engaging audiences and growing your brand across all social media platforms.</p>
+            </div>
+          </div>
+
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Analytics & Reporting</h4>
+              <p>Track metrics and deliver insights to optimize campaign performance.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Ongoing Optimization</h4>
+              <p>Optimizing campaigns with A/B testing to maximize ROI efficiently.</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="transform-column">
+          <div class="donations-container">
+            <div class="img-wrapper">
+              <img src="./img/digitalm.webp" alt="plan">
+            </div>
+            <div class="donations-img">
+              <img src="./img/leadg.jpeg" alt="layout" class="secondary-image">
+              <img src="./img/socialm.jpeg" alt="design" class="third-image">
+            </div>
+            <div class="testimonial-card-one">
+              <img src="./img/quotation.png" alt="quote">
+              <p>"Crafting responsive, user-friendly, and high-performing websites that bring your digital vision to
+                life."</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- planning end -->
+  <!-- service start-->
+  <section class="service-section ">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="row align-items-center text-center">
+
+        <div class="col-lg-4 mb-4 mb-lg-0 ">
+
+
+          <div class="service-item" data-image="./img/seogif.gif" data-title="Search Engine" data-span="Optimization"
+            data-p1="1. Boost your visibility and attract the right audience."
+            data-p2="2. Rank higher with powerful SEO strategies."
+            data-p3="3. Enhance your website authority and performance.">
+            <div class="service-icon">
+              <img src="./img/seo-search-svgrepo-com.svg" alt="SEO">
+            </div>
+            <div class="service-content">
+              <h5>Search Engine Optimization</h5>
+              <p>Improve ranking and drive organic traffic.</p>
+            </div>
+          </div>
+
+          <div class="service-item active" data-image="./img/adds.gif" data-title="Social Media" data-span="Marketing"
+            data-p1="1. Heads up, look forward to customers flooding in!"
+            data-p2="2. Plan your lead generation strategy to ensure optimal results."
+            data-p3="3. We’re your one-stop solution for generating leads by targeting the right audience and increasing your sales.">
+            <div class="service-icon">
+              <img src="./img/socialmedia.svg" alt="Influencer Marketing">
+            </div>
+            <div class="service-content">
+              <h5>Social Media Marketing</h5>
+              <p>Build your brand reach with trusted influencers.</p>
+            </div>
+          </div>
+
+
+          <div class="service-item" data-image="./img/performance.gif" data-title="Performance" data-span="Marketing"
+            data-p1="1. Turn every click into a conversion." data-p2="2. Measure and scale what works."
+            data-p3="3. Maximize ROI with data-driven campaigns.">
+            <div class="service-icon">
+              <img src="./img/performance-increase-svgrepo-com.svg" alt="Performance Marketing">
+            </div>
+            <div class="service-content">
+              <h5>Performance Marketing</h5>
+              <p>Creative campaigns that deliver measurable growth.</p>
+            </div>
+          </div>
+
+          <div class="service-item" data-image="./img/leads.gif" data-title="Lead" data-span="Generation"
+            data-p1="1. We deliver high-quality, ready-to-convert leads." data-p2="2. Reach customers who truly matter."
+            data-p3="3. Drive sales with strategic lead funnels.">
+            <div class="service-icon">
+              <img src="./img/lead generation.svg" alt="Lead Generation">
+            </div>
+            <div class="service-content">
+              <h5>Lead Generation</h5>
+              <p>Generate leads that fuel business growth.</p>
+            </div>
+          </div>
+          <div class="service-item" data-image="./img/content-creator.gif" data-title="Influencer"
+            data-span="Marketing" data-p1="1. Heads up, look forward to customers flooding in!"
+            data-p2="2. Plan your lead generation strategy to ensure optimal results."
+            data-p3="3. We’re your one-stop solution for generating leads by targeting the right audience and increasing your sales.">
+            <div class="service-icon">
+              <img src="./img/group.png" alt="Influencer Marketing">
+            </div>
+            <div class="service-content">
+              <h5>Influencer Marketing</h5>
+              <p>Build your brand reach with trusted influencers.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="service-details ">
+            <h2>Influencer<span> Marketing</span></h2>
+            <p>1. Heads up, look forward to customers flooding in!</p>
+            <p>2. Plan your lead generation strategy to ensure optimal results.</p>
+            <p>3.We’re your one-stop solution for generating leads by targeting the right audience and
+              increasing your sales.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-center">
+          <div class="service-image ms-4">
+            <img src="./img/growth.gif" alt="Service Illustration">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- service end -->
+
+
+  <!-- ✅ OUR WORK CAROUSEL -->
+  <section class="team section_padding">
+    <div class="section-title">
+      <h2>Our Projects</h2>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="single-team shift-up">
+          <div class="team-img">
+            <img src="./img/fish.webp" alt="Project 1" class="profile-image">
+          </div>
+        </div>
+        <div class="single-team shift-down">
+          <div class="team-img">
+            <img src="./img/silk.webp" alt="Project 2" class="profile-image">
+          </div>
+        </div>
+        <div class="single-team shift-up">
+          <div class="team-img">
+            <img src="./img/chicken.webp" alt="Project 3" class="profile-image">
+          </div>
+        </div>
+        <div class="single-team shift-down">
+          <div class="team-img">
+            <img src="./img/spa.webp" alt="Project 4" class="profile-image">
+          </div>
+        </div>
+        <div class="single-team shift-up">
+          <div class="team-img">
+            <img src="./img/coffee.webp" alt="Project 5" class="profile-image">
+          </div>
+        </div>
+        <div class="single-team shift-down">
+          <div class="team-img">
+            <img src="./img/rice.webp" alt="Project 6" class="profile-image">
+          </div>
+        </div>
+        <div class="single-team shift-up">
+          <div class="team-img">
+            <img src="./img/tandoor.webp" alt="Project 7" class="profile-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="prevBtn">&#10094;</button>
+        <button class="carousel-btn" id="nextBtn">&#10095;</button>
+      </div>
+    </div>
+  </section>
+  <!-- end -->
+
+  <!-- testimonial -->
+
+  <!-- testimonial -->
+  <section class="testimonial section_padding">
+    <h2 class="text-center">Client Testimonials</h2>
+    <div class="container">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Krafted Tales</h3>
+                  <p class="testimonial-date">8th August 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    We chose Digital Spice Up for website and software needs; their strategy, design, and support helped
+                    Krafted Tales scale effortlessly.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Success Mantra</h3>
+                  <p class="testimonial-date">20th August 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Professional team, seamless communication, and top-quality development gave our homestay a modern,
+                    guest-loved online presence.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Kanchenjauga View Point Homestay</h3>
+                  <p class="testimonial-date">8th Oct 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Professional team, seamless communication, and top-quality development gave our homestay a modern,
+                    guest-loved online presence.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Zero to 81</h3>
+                  <p class="testimonial-date">5th Nov 2024</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Digital Spice Up built our fast, modern e-commerce site and boosted revenue through effective
+                    performance marketing. Skilled, dedicated team.
+
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Banglar Misti</h3>
+                  <p class="testimonial-date">3rd Dec 2024</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+
+                    Fantastic work by Digital Spice Up—great e-commerce for Banglar Misti, strong SEO marketing,
+                    increased brand reach, and steady business growth.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Chakraborty Security Agency</h3>
+                  <p class="testimonial-date">10th june 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Digital Spice Up delivered an efficient website with strong SEO results. Responsive, knowledgeable
+                    team—truly dedicated and we’re very happy.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- testimonial end -->
+
+  <!-- faq -->
+
+  <section class="faq-section section_padding">
+    <div class="container">
+      <div class="main-faq">
+
+        <div class="faq-question">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+
+          <div class="accordion" id="faqAccordion">
+
+            <!-- Question 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne">
+                  1. Can you provide AI-powered digital marketing services?
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, we can provide AI-powered digital marketing solutions based on your business goals.
+                  As a team providing best digital marketing in India, we can use AI for audience research,
+                  content ideas, customer segmentation, campaign optimization, personalization, predictive
+                  insights, marketing automation, and other digital marketing activities.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Grow with AI</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">
+                  2. What digital marketing services do you provide?
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We provide a complete range of digital marketing services, including SEO, social media marketing,
+                  performance marketing, lead generation, influencer marketing, content marketing, paid advertising,
+                  and campaign optimization. We create strategies based on your business goals and target audience.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Explore Services</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree">
+                  3. How can digital marketing help my business grow?
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Digital marketing can help your business increase online visibility, reach the right audience,
+                  generate leads, build brand awareness, and create more sales opportunities. We use suitable digital
+                  channels to help your business achieve sustainable online growth.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Grow Your Business</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour">
+                  4. Can you create a complete digital marketing strategy for my business?
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. We can create a customized digital marketing strategy based on your business, industry,
+                  target audience, competition, and goals. The strategy can include SEO, social media,
+                  paid advertising, content marketing, lead generation, and other suitable digital channels.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Plan Your Strategy</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive">
+                  5. Can you generate quality leads through digital marketing?
+
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. We create targeted lead generation campaigns using search engines, social media,
+                  paid advertising, content, landing pages, and other suitable channels.
+                  We focus on reaching potential customers who are more likely to show interest
+                  in your products or services.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Generate Leads</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix">
+                  6. Can you manage social media marketing for our business?
+
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. We can manage your social media marketing by creating content strategies, campaigns,
+                  audience engagement, paid promotions, and brand-focused activities across relevant social
+                  media platforms. Our goal is to build your online presence and connect your brand with the
+                  right audience.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Grow on Social Media</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Side Image -->
+        <div class="image-section">
+          <div class="image-container">
+            <img src="./img/faq.webp" alt="FAQ image" id="faqImage">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- faq end -->
+
+  <!-- our client -->
+  <!-- logo carousel -->
+<section class="logo-carousel section_padding">
+      <h2 class="title">Our Clients</h2>
+  <div class="logo-wrapper">
+        <div class="logo-track">
+          <a href="kraftedtales.html"><img src="./img/kraftedtales-logo.png"
+              alt="best digital marketing company in Howrah India"></a>
+          <a href="shilpakala.html"><img src="./img/shilpakala-logo.png"
+              alt="best digital marketing agency in Howrah India"></a>
+          <a href="kanchenjaunga.html"><img src="./img/kanchenjunga-logo.png"
+              alt="best Mobile app development company in Kolkata India"></a>
+          <a href="annoor.html"><img src="./img/annoor-logo.png"
+              alt="best Mobile app development agency in Kolkata India"></a>
+          <a href="zeroto81.html"><img src="./img/zeroto81-logo.png"
+              alt="popular website development company in Kolkata India"></a>
+          <a href="banglarmisti.html"><img src="./img/banglarmisti-logo.png"
+              alt="top website development company in Kolkata India"></a>
+          <a href="wardrrobe.html"><img src="./img/warddrobe-logo.png"
+              alt="custom website development company in Kolkata India"></a>
+          <a href="sreebangi.html"><img src="./img/sribangi-logo.png"
+              alt="best web development company in Kolkata India"></a>
+          <a href="csa.html"><img src="./img/csa-logo.png" alt="best website design company in Kolkata India"></a>
+          <a href="goservice.html"><img src="./img/go-service.webp"
+              alt="best website design company in Kolkata India"></a>
+              <a href="patco.html"><img src="./img/patco-logo.png"
+              alt="best website design company in Kolkata India"></a>
+                     <a href="success.html"><img src="./img/success-logo.webp"
+              alt="best website design company in Kolkata India"></a>
+        </div>
+      </div>
+    </section>
+  <!-- logo end -->
+
+  <!-- footer -->
+  <footer>
+
+    <section class="footer_section section_padding">
+      <div class="container">
+        <div class="row footer-row mt-5 align-items-stretch">
+
+          <div class="col-12 col-md-2 footer-col py-2">
+            <a href="#" class="footer-logo">
+              <img src="./img/digital-spiceup.webp" alt="Give Logo">
+            </a>
+            <p class="footer-tagline pb-2">
+              Empowering Brands with Digital Intelligence —
+              <span> Digital Spice Up </span> at your service.
+            </p>
+
+
+            <a href="tel:+91 90381 20150"><i class="fa-solid fa-phone"></i> +91 90381 20150</a>
+            <a href="mailto:info@digitalspiceup.com"><i class="fa-solid fa-message"></i>info@digitalspiceup.com</a>
+
+
+            <div class="footer-social-icons">
+              <div class="social-icon-group"><a href="https://www.facebook.com/profile.php?id=61552457402967"><i
+                    class="fab fa-facebook-f"></i></a></div>
+              <div class="social-icon-group"><a href="https://pin.it/5uFfr1rU5"><i
+                    class="fa-brands fa-pinterest"></i></a></div>
+              <div class="social-icon-group"><a
+                  href="https://www.linkedin.com/company/digital-marketing-company-in-india-digital-spiceup/?viewAsMember=true"><i
+                    class="fab fa-linkedin-in"></i></a></div>
+              <div class="social-icon-group"><a href="https://www.instagram.com/digitalspiceup/"><i
+                    class="fab fa-instagram"></i></a></div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3 footer-col">
+            <h2 class="footer-heading ms-5">Quick Links</h2>
+            <ul class="footer-links ms-5">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="casestudy.html">Case Study</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-6 col-md-3 footer-col">
+            <h2 class="footer-heading me-5">Services</h2>
+            <ul class="footer-links me-5">
+              <li><a href="web.html">Web Development</a></li>
+              <li><a href="app.html">App Development</a></li>
+              <li><a href="ui.html">UI/UX Design</a></li>
+              <li><a href="software.html">Software Development</a></li>
+              <li><a href="seo.html">Seo Marketing</a></li>
+              <li><a href="digital.html">Digital Marketing</a></li>
+              <li><a href="performance.html">Performance Marketing</a></li>
+
+            </ul>
+          </div>
+
+          <!-- Contact Form Right -->
+          <div class="col-12 col-md-4 footer-right d-flex flex-column justify-content-start">
+            <h2 class="text-white mb-3">Get in Touch</h2>
+
+            <form class="footer-contact-form w-100">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Phone" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="mb-3 flex-grow-1">
+                <textarea class="form-control h-100" rows="4" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn text-dark w-100">Send</button>
+            </form>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+         <!-- Footer Bottom / Copyright & Top Arrow -->
+        <div class="footer-bottom-bar">
+          <p class="footer-copy mb-0">&copy; 2026 Digital Spice Up. All rights reserved.</p>
+        </div>
+  </footer>
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="floatingBackToTop" class="floating-back-to-top" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button> 
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/digital.js"></script>
+  <script src="./js/back-to-top.js"></script>
+</body>
+</html>

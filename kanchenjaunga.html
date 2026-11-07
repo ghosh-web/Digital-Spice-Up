@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- font awsome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+  </style>
+
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/casestudy.css">
+  <link rel="stylesheet" href="./css/back-to-top.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="./index.html"> <img src="./img/digital-spiceup.webp"
+            alt="Digital Spice Up Logo" class="me-2"></a>
+
+
+        <button class="navbar-toggler" type="button" onclick="showSideBar()">
+          ☰
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-block">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+                <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+                <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+                <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+                <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+                <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+                <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="casestudy.html">Case Study</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav_btn ms-lg-3" href="contact.html">Let’s Chat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="sidebarOverlay" class="sidebar-overlay d-none">
+      <div id="sidebar" class="sidebar">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <a class="navbar-brand fw-bold text-primary" href="#"> <img src="./img/digital-spiceup.webp"
+              alt="Digital Spice Up Logo" class="me-2"></a>
+          <button class="btn btn-sm btn-outline-secondary" onclick="closeSidebar()">✖</button>
+        </div>
+
+        <ul class="list-unstyled">
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+
+          <li class="menu-item" onclick="toggleServices()">Services ▸</li>
+          <ul id="serviceMenu" class="list-unstyled submenu d-none">
+            <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+            <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+            <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+            <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+            <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+            <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+            <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+          </ul>
+
+          <li class="menu-item"><a href="casestudy.html">Case Study</a></li>
+          <li class="menu-item"><a href="blog.html">Blog</a></li>
+          <li class="menu-item cta"><a href="contact.html">Let’s Chat</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- nav end -->
+  <!-- loader start -->
+  <div class="loader-wrapper">
+    <div class="dot-loader">
+      <img src="./img/favicon.png" alt="">
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- loader end -->
+  <main>
+    <!-- banner start -->
+    <section class="k-banner">
+      <div class="kraftedb"><img src="./img/kanchenjaunga-banner.webp" alt="">
+      </div>
+    </section>
+    <!-- banner end -->
+    <!-- kanchenjaunga start -->
+    <section class="krafted-about section_padding text-center">
+      <div class="container">
+        <h2 class="kanchenjaunga-head text-center">Where every scroll feels like a step closer to the Himalayas</h2>
+        <a href="contact.html" class="kabout-btn ">Let’s Map Your Digital Growth</a>
+      </div>
+    </section>
+    <!-- kanchenjaunga end -->
+    <!-- kanchenjaunga text start -->
+    <section class="zerto81text section_padding text-center ">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Content -->
+          <div class="col-lg-7 col-md-12 zero-left text-start">
+            <h3>Kanchenjunga View Point Homestay: Showcasing Scenic Stays with a Seamless Digital Experience</h3>
+
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="zerobtn1">CLIENT : Kanchenjunga View Point Homestay</a>
+              <a href="#" class="zerobtn2">FIELD: Homestay Page</a>
+            </div>
+          </div>
+          <!-- Right Content -->
+          <div class="col-lg-5 col-md-12 zero-right text-end">
+            <h4 class="text-center">Crafting elevated mountain stays.Built for views, comfort, and unforgettable
+              Kanchenjunga experiences.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--kanchenjaunga end -->
+
+    <!-- kanchenjaunga-story start -->
+    <section class=" kanchenjaunga-story section_padding ">
+      <div class="container">
+
+        <div class="row align-items-center text-center">
+          <div class="col-lg-7 col-md-6">
+            <h2>Brand Story</h2>
+            <h3>Not just a stay — an experience rooted in the Himalayas</h3>
+            <p>Kanchenjunga Homestay is a family-run retreat blending mountain serenity, local culture, and breathtaking
+              views of the Kanchenjunga range.
+              Surrounded by nature and warmth, the challenge was to translate this soulful, real-world experience into a
+              digital presence that feels equally personal and inviting.</p>
+          </div>
+          <div class="col-lg-5 col-md-6">
+            <img src="./img/kanchenjaunga-story.webp" alt="kanchenjaunga-story" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- kanchenjaunga-story end -->
+    <!-- kanchenjaunga approach start -->
+
+    <section class="kanchenjaunga-approach">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <!-- LEFT TEXT -->
+          <div class="col-lg-6 kanchenjaunga-text">
+            <h2>Our Approach</h2>
+            <p>
+              We crafted a story-driven website that feels calm, immersive, and intuitive.
+              The focus was on seamless user flow, mobile-first design, and visually rich storytelling,
+              supported by a strong SEO foundation to attract and convert high-intent travel audiences.
+            </p>
+          </div>
+
+          <!-- RIGHT IMAGES -->
+          <div class="col-lg-6">
+            <div class="image-layout">
+
+              <!-- TOP 3 IMAGES -->
+              <div class="top-images">
+                <img src="./img/kanchenjauga-one.webp" alt="">
+                <img src="./img/kanchenjaunga-two.webp" alt="">
+                <img src="./img/kanchenjauga-three.webp" alt="">
+              </div>
+
+              <!-- BOTTOM RECTANGLE IMAGE -->
+              <div class="bottom-image align-items-center px-2">
+                <img src="./img/kanchenjaunga-four.webp" alt="">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- kanchenjaunga approach end -->
+
+    <!-- kanchenjaunga challenge start -->
+    <section class="kanchenjaunga-challenge section_padding">
+      <div class="container">
+        <h2 class="text-center">The Main Challenges</h2>
+        <p class="text-center">The brand had limited digital expression compared to its
+          rich on-ground experience. The website needed stronger
+          storytelling, a clearer user journey, and optimized
+          performance to better engage visitors and encourage meaningful
+          inquiries.
+        </p>
+      </div>
+    </section>
+    <!-- kanchenjaunga challenge end -->
+    <!-- what we delivered start -->
+    <section class="delivered">
+      <div class="container">
+        <div class="row delivered align-items-center ">
+
+          <div class="col-lg-5 col-md-6 text-center">
+            <div class="mobile-img">
+              <img src="./img/kanchenjaunga-deliverd.webp" alt="mobile">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="content-box">
+              <h2>What We Delivered</h2>
+              <p>
+                A fully responsive, conversion-focused website designed to blend storytelling with performance.
+                The platform is fast, SEO-friendly, and structured to guide users smoothly from exploration to inquiry.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- what we delivered end -->
+    <!-- kanchenjaunga-impact start -->
+    <section class="kanchenjaunga-impact section_padding align-items-center">
+      <div class="container">
+        <h2 class="text-center">Impact We Delivered (Real-Time Analytics Driven)2.5X increase
+          in average session duration — users explore more</h2>
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-4 col-md-4">
+            <p class="kanchenjaunga-left-text">
+              40% reduction in bounce rate — stronger first impression
+            </p>
+            <p class="kanchenjaunga-left-text">
+              Improved search visibility — better reach for target audience
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <img src="./img/kanchenjaunga-impact.webp" alt="" class="text-center">
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <p class="kanchenjaunga-right-text">60% improvement in mobile engagement — better user experience</p>
+            <p class="kanchenjaunga-right-text">3X growth in inquiry clicks — higher conversion intent</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- kanchenjaunga-impact end -->
+
+    <!-- our client -->
+   <section class="logo-carousel section_padding">
+      <h2 class="title">Our Clients</h2>
+ <div class="logo-wrapper">
+        <div class="logo-track">
+          <a href="kraftedtales.html"><img src="./img/kraftedtales-logo.png"
+              alt="best digital marketing company in Howrah India"></a>
+          <a href="shilpakala.html"><img src="./img/shilpakala-logo.png"
+              alt="best digital marketing agency in Howrah India"></a>
+          <a href="kanchenjaunga.html"><img src="./img/kanchenjunga-logo.png"
+              alt="best Mobile app development company in Kolkata India"></a>
+          <a href="annoor.html"><img src="./img/annoor-logo.png"
+              alt="best Mobile app development agency in Kolkata India"></a>
+          <a href="zeroto81.html"><img src="./img/zeroto81-logo.png"
+              alt="popular website development company in Kolkata India"></a>
+          <a href="banglarmisti.html"><img src="./img/banglarmisti-logo.png"
+              alt="top website development company in Kolkata India"></a>
+          <a href="wardrrobe.html"><img src="./img/warddrobe-logo.png"
+              alt="custom website development company in Kolkata India"></a>
+          <a href="sreebangi.html"><img src="./img/sribangi-logo.png"
+              alt="best web development company in Kolkata India"></a>
+          <a href="csa.html"><img src="./img/csa-logo.png" alt="best website design company in Kolkata India"></a>
+          <a href="goservice.html"><img src="./img/go-service.webp"
+              alt="best website design company in Kolkata India"></a>
+              <a href="patco.html"><img src="./img/patco-logo.png"
+              alt="best website design company in Kolkata India"></a>
+                     <a href="success.html"><img src="./img/success-logo.webp"
+              alt="best website design company in Kolkata India"></a>
+        </div>
+      </div>
+    </section>
+    <!-- client end -->
+
+    <!-- footer start -->
+    <footer>
+
+      <section class="footer_section section_padding">
+        <div class="container">
+          <div class="row footer-row mt-5 align-items-stretch">
+
+            <div class="col-12 col-md-2 footer-col py-2">
+              <a href="#" class="footer-logo">
+                <img src="./img/digital-spiceup.webp" alt="Give Logo">
+              </a>
+              <p class="footer-tagline pb-2">
+                Empowering Brands with Digital Intelligence —
+                <span> Digital Spice Up </span> at your service.
+              </p>
+
+
+              <a href="tel:+91 90381 20150"><i class="fa-solid fa-phone"></i> +91 90381 20150</a>
+              <a href="mailto:info@digitalspiceup.com"><i class="fa-solid fa-message"></i>info@digitalspiceup.com</a>
+
+
+              <div class="footer-social-icons">
+                <div class="social-icon-group"><a href="https://www.facebook.com/profile.php?id=61552457402967"><i
+                      class="fab fa-facebook-f"></i></a></div>
+                <div class="social-icon-group"><a href="https://pin.it/5uFfr1rU5"><i
+                      class="fa-brands fa-pinterest"></i></a></div>
+                <div class="social-icon-group"><a
+                    href="https://www.linkedin.com/company/digital-marketing-company-in-india-digital-spiceup/?viewAsMember=true"><i
+                      class="fab fa-twitter"></i></a></div>
+                <div class="social-icon-group"><a href="https://www.instagram.com/digitalspiceup/"><i
+                      class="fab fa-instagram"></i></a></div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-6 col-md-3 footer-col">
+              <h2 class="footer-heading ms-5">Quick Links</h2>
+              <ul class="footer-links ms-5">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="casestudy.html">Case Study</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="col-6 col-md-3 footer-col">
+              <h2 class="footer-heading me-5">Services</h2>
+              <ul class="footer-links me-5">
+                <li><a href="web.html">Web Development</a></li>
+                <li><a href="app.html">App Development</a></li>
+                <li><a href="ui.html">UI/UX Design</a></li>
+                <li><a href="software.html">Software Development</a></li>
+                <li><a href="seo.html">Seo Marketing</a></li>
+                <li><a href="digital.html">Digital Marketing</a></li>
+                <li><a href="performance.html">Performance Marketing</a></li>
+
+              </ul>
+            </div>
+
+            <!-- Contact Form Right -->
+            <div class="col-12 col-md-4 footer-right d-flex flex-column justify-content-start">
+              <h2 class="text-white mb-3">Get in Touch</h2>
+
+              <form class="footer-contact-form w-100">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="tel" class="form-control" placeholder="Phone" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3 flex-grow-1">
+                  <textarea class="form-control h-100" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn text-dark w-100">Send</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+    
+      </div>
+    </section>
+  </footer>
+      <!-- Footer Bottom / Copyright & Top Arrow -->
+        <div class="footer-bottom-bar">
+          <p class="footer-copy mb-0">&copy; 2026 Digital Spice Up. All rights reserved.</p>
+          <!-- <a href="#" class="footer-back-to-top" id="footerBackToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" aria-label="Scroll to top" title="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a> -->
+        </div>
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="floatingBackToTop" class="floating-back-to-top" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+   
+
+ 
+    <!-- footer end -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/casestudy.js"></script>
+    <script src="./js/back-to-top.js"></script>
+</body>
+
+</html

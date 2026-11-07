@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- font awsome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/seo.css">
+  <link rel="stylesheet" href="./css/back-to-top.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- nav start -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="index.html"> <img src="./img/digital-spiceup.webp"
+            alt="Digital Spice Up Logo" class="me-2"></a>
+
+
+        <button class="navbar-toggler" type="button" onclick="showSideBar()">
+          ☰
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-block">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+                <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+                <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+                <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+                <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+                <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+                <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="casestudy.html">Case Study</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-btn ms-lg-3" href="contact.html">Let’s Chat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="sidebarOverlay" class="sidebar-overlay d-none">
+      <div id="sidebar" class="sidebar">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <a class="navbar-brand fw-bold text-primary" href="#"> <img src="./img/digital-spiceup.webp"
+              alt="Digital Spice Up Logo" class="me-2"></a>
+          <button class="btn btn-sm btn-outline-secondary" onclick="closeSidebar()">✖</button>
+        </div>
+
+        <ul class="list-unstyled">
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+
+          <li class="menu-item" onclick="toggleServices()">Services ▸</li>
+          <ul id="serviceMenu" class="list-unstyled submenu d-none">
+            <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+            <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+            <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+            <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+            <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+            <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+            <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+          </ul>
+
+          <li class="menu-item"><a href="casestudy.html">Case Study</a></li>
+          <li class="menu-item"><a href="blog.html">Blog</a></li>
+          <li class="menu-item cta"><a href="contact.html">Let’s Chat</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- nav end -->
+
+  <!-- loader start -->
+  <div class="loader-wrapper">
+    <div class="dot-loader">
+      <img src="./img/favicon.png" alt="">
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+  <!-- loader end -->
+
+  <!-- banner start -->
+
+  <section class="s-banner"
+    style=" position: relative; width: 100%; height: 450px; overflow: hidden; background-size: contain;">
+    <div style="width: 100%; height: 100%; position: relative;">
+      <video autoplay muted loop playsinline
+        style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; transform: translate(-50%, -50%);">
+        <source src="./assets/video/seo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="s-content">
+        <h1>Search Engine Optimization
+        </h1>
+        <p>SEO That Drives Real Revenue</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- banner end -->
+
+  <section class="seo-about section_padding">
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <!-- Left Text -->
+        <div class="col-lg-6 mt-2">
+          <h2 class="seo-title ">
+            Rank Higher. Get Noticed. Grow Faster.
+          </h2>
+          <h2 class="seo-subtitle">Partner with the Leading SEO Agency in Howrah, West Bengal.</h2>
+          <p class="seo-para ">
+            Are your competitors outranking you online? Losing potential customers due to low visibility?
+            we transform your website into a lead-magnet with powerful SEO strategies.
+            With our data-driven approach and proven optimization techniques, we help your brand secure top
+            Google rankings and drive high-quality traffic that converts.
+          </p>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+
+            <div class="col-6">
+              <div class="seo-box text-center">
+                <h3>14+</h3>
+                <p>Years of SEO Experience</p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="seo-box text-center">
+                <h3>500+</h3>
+                <p>SEO Projects Successfully Delivered</p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="seo-box text-center">
+                <h3>25K</h3>
+                <p>Keywords Ranked in 1st Page of Google</p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="seo-box text-center">
+                <h3>1.5L</h3>
+                <p>Organic Leads Generated</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- seo about end -->
+  <!-- service start-->
+
+  <section class="seo-service section_padding">
+    <div class="container">
+      <h2 class="seo-heading">Dominate Search With Seo</h2>
+
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Local SEO -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+
+              <!-- Front -->
+              <div class="flip-card-front seo-card p-4">
+                <img src="./img/pin (1).png" alt="">
+                <h3 class="mt-3">Local SEO</h3>
+                <p>Drive targeted leads & skyrocket rankings with powerful SEO campaigns</p>
+              </div>
+
+              <!-- Back -->
+              <div class="flip-card-back p-4">
+                <p>Boost your business visibility and attract nearby customers with local SEO.
+                  Optimize your Google Business Profile, build local citations, and create hyper-local content that
+                  drives measurable results.</p>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise SEO -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front seo-card p-4">
+                <img src="./img/bar-chart.png" alt="">
+                <h3 class="mt-3">Enterprise SEO</h3>
+                <p>Unlock unmatched search performance with scalable enterprise optimization
+                  methodologies</p>
+              </div>
+
+              <div class="flip-card-back p-4">
+                <p>
+                  Scale your digital presence with enterprise-level SEO tailored for large websites and competitive
+                  markets. Drive higher rankings, traffic,
+                  and conversions through data-driven optimization and smart automation.</p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Ecommerce SEO -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front seo-card p-4">
+                <img src="./img/ecommerce (1).png" alt="">
+                <h3 class="mt-3">Ecommerce SEO</h3>
+                <p>Improve add-to-cart rates and sales with user-focused eCommerce SEO optimization</p>
+              </div>
+
+              <div class="flip-card-back p-4">
+                <p>Boost conversions and revenue with strategic, user-focused eCommerce SEO.
+
+                  Enhance product visibility, optimize buyer journeys, and turn every click into loyal,
+                  long-term customers for sustained online growth.
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- International SEO -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front seo-card p-4">
+                <img src="./img/world-grid.png" alt="">
+                <h3 class="mt-3">International SEO</h3>
+                <p>Strengthen your international footprint with advanced multi-country SEO tactics</p>
+              </div>
+
+              <div class="flip-card-back p-4">
+                <p>Build global authority and connect with audiences in every region through localized
+                  SEO excellence.
+
+                  Optimize for country-specific search trends and languages to unlock sustainable
+                  worldwide growth</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--service end -->
+
+  <!-- planning start -->
+
+  <section class="transform-section section_padding">
+    <div class="container">
+
+      <div class="transform-row">
+        <div class="transform-column ">
+          <h2 class="pt-2 thead">Form Start To Finish</h2>
+
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Website Audit & Business Assessment</h4>
+              <p>Data-backed keyword research to grow your audience</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Keyword Research & Optimisation</h4>
+              <p>On-page SEO tactics that make your site faster, findable, and content-rich</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Technical SEO & On-Page Optimisation</h4>
+              <p>Skilled writers producing SEO content that retains visitors and builds credibility.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Performance Tracking & Reporting</h4>
+              <p>Transparent SEO reports showing metrics, traffic, and campaign results.</p>
+            </div>
+          </div>
+
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Dedicated Support</h4>
+              <p>High-quality SEO services combining specialist expertise and regular updates.</p>
+            </div>
+          </div>
+
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>SEO Backlink Building & Management</h4>
+              <p>Strengthen your website with high-DA links and thorough backlink checks</p>
+            </div>
+          </div>
+
+          <!-- <button type="button" class="btn cta-button" data-bs-toggle="modal" data-bs-target="#ctaModal">
+            Explore Now
+          </button> -->
+
+        </div>
+
+
+        <!-- Right Column -->
+        <div class="transform-column">
+          <div class="donations-container">
+            <div class="img-wrapper">
+              <img src="./img/searchengine.webp" alt="plan">
+            </div>
+            <div class="donations-img">
+              <img src="./img/SEO 3D.jpeg" alt="layout" alt="layout" class="secondary-image">
+              <img src="./img/wmremove-transformed (21).jpeg" alt="design" class="third-image">
+            </div>
+            <div class="testimonial-card-one">
+              <img src="./img/quotation.png" alt="quote">
+              <p>"Crafting responsive, user-friendly, and high-performing websites that bring your digital vision to
+                life."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- planning end -->
+
+  <!-- testimonial -->
+
+  <!-- testimonial -->
+  <section class="testimonial section_padding">
+    <h2 class="text-center">Client Testimonials</h2>
+    <div class="container">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Krafted Tales</h3>
+                  <p class="testimonial-date">8th August 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    We chose Digital Spice Up for website and software needs; their strategy, design, and support helped
+                    Krafted Tales scale effortlessly.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Success Mantra</h3>
+                  <p class="testimonial-date">20th August 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Professional team, seamless communication, and top-quality development gave our homestay a modern,
+                    guest-loved online presence.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Kanchenjauga View Point Homestay</h3>
+                  <p class="testimonial-date">8th Oct 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Professional team, seamless communication, and top-quality development gave our homestay a modern,
+                    guest-loved online presence.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Zero to 81</h3>
+                  <p class="testimonial-date">5th Nov 2024</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Digital Spice Up built our fast, modern e-commerce site and boosted revenue through effective
+                    performance marketing. Skilled, dedicated team.
+
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Banglar Misti</h3>
+                  <p class="testimonial-date">3rd Dec 2024</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+
+                    Fantastic work by Digital Spice Up—great e-commerce for Banglar Misti, strong SEO marketing,
+                    increased brand reach, and steady business growth.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Chakraborty Security Agency</h3>
+                  <p class="testimonial-date">10th june 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Digital Spice Up delivered an efficient website with strong SEO results. Responsive, knowledgeable
+                    team—truly dedicated and we’re very happy.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- end -->
+
+  <!-- faq start -->
+  <section class="faq-section section_padding">
+    <div class="container">
+      <div class="main-faq">
+        <div class="faq-question">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+
+
+          <div class="accordion" id="faqAccordion">
+            <!-- Question 1 -->
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  1. Can you use AI in SEO?
+
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, we can use Artificial Intelligence to support modern SEO strategies.
+                  AI can help with keyword research, content analysis, search intent, competitor research,
+                  content optimization, and identifying new search opportunities. We combine AI-driven insights
+                  with human expertise to create effective and user-focused SEO strategies.
+
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Grow with AI</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2. How can SEO help my business grow?
+
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  SEO helps your business become more visible when potential customers search for products or
+                  services related to your business. We focus on improving your website's visibility, attracting
+                  relevant organic traffic, generating leads, and creating long-term opportunities for business growth.
+
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Grow Your Business</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3. What types of SEO services do you provide?
+
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We provide a complete range of SEO services, including Local SEO, E-commerce SEO, Enterprise SEO,
+                  International SEO, Technical SEO, On-Page SEO, Keyword Research, Content Optimization, and SEO
+                  Backlink
+                  Building. We create strategies based on your business goals, industry, target audience, and
+                  competition.
+
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Explore SEO Services</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  4. How long does it take to see results from SEO?
+
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  SEO is a long-term strategy, and the time required to see significant results depends on factors such
+                  as your website's current condition, competition, industry, keywords, and SEO strategy. We focus on
+                  consistent optimization and sustainable growth rather than short-term results.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Start SEO</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  5. Can you help local businesses rank on Google?
+
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. We provide Local SEO services to help businesses improve their visibility in location-based
+                  searches.
+                  We can optimize your Google Business Profile, local content, citations, website pages, and other
+                  important
+                  local search factors to help you reach customers in your target locations.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Boost Local SEO</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  6. Can you provide SEO for e-commerce websites?
+
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. We provide E-commerce SEO to improve product and category visibility,
+                  attract relevant organic traffic, and create better opportunities for sales.
+                  We can optimize product pages, category pages, website structure, content, search intent,
+                  and other important SEO elements for online stores.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Grow Your Store</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="image-section">
+          <div class="image-container">
+            <img src="./img/faq.webp" alt="Children in need">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- faq end -->
+
+  <!-- logo carousel -->
+<section class="logo-carousel section_padding">
+      <h2 class="title">Our Clients</h2>
+   <div class="logo-wrapper">
+        <div class="logo-track">
+          <a href="kraftedtales.html"><img src="./img/kraftedtales-logo.png"
+              alt="best digital marketing company in Howrah India"></a>
+          <a href="shilpakala.html"><img src="./img/shilpakala-logo.png"
+              alt="best digital marketing agency in Howrah India"></a>
+          <a href="kanchenjaunga.html"><img src="./img/kanchenjunga-logo.png"
+              alt="best Mobile app development company in Kolkata India"></a>
+          <a href="annoor.html"><img src="./img/annoor-logo.png"
+              alt="best Mobile app development agency in Kolkata India"></a>
+          <a href="zeroto81.html"><img src="./img/zeroto81-logo.png"
+              alt="popular website development company in Kolkata India"></a>
+          <a href="banglarmisti.html"><img src="./img/banglarmisti-logo.png"
+              alt="top website development company in Kolkata India"></a>
+          <a href="wardrrobe.html"><img src="./img/warddrobe-logo.png"
+              alt="custom website development company in Kolkata India"></a>
+          <a href="sreebangi.html"><img src="./img/sribangi-logo.png"
+              alt="best web development company in Kolkata India"></a>
+          <a href="csa.html"><img src="./img/csa-logo.png" alt="best website design company in Kolkata India"></a>
+          <a href="goservice.html"><img src="./img/go-service.webp"
+              alt="best website design company in Kolkata India"></a>
+              <a href="patco.html"><img src="./img/patco-logo.png"
+              alt="best website design company in Kolkata India"></a>
+                     <a href="success.html"><img src="./img/success-logo.webp"
+              alt="best website design company in Kolkata India"></a>
+        </div>
+      </div>
+    </section>
+  <!-- logo end -->
+
+  <!-- footer start -->
+  <footer>
+
+    <section class="footer_section section_padding">
+      <div class="container">
+        <div class="row footer-row mt-5 align-items-stretch">
+
+          <div class="col-12 col-md-2 footer-col py-2">
+            <a href="#" class="footer-logo">
+              <img src="./img/digital-spiceup.webp" alt="Give Logo">
+            </a>
+            <p class="footer-tagline pb-2">
+              Empowering Brands with Digital Intelligence —
+              <span> Digital Spice Up </span> at your service.
+            </p>
+
+
+            <a href="tel:+91 90381 20150"><i class="fa-solid fa-phone"></i> +91 90381 20150</a>
+            <a href="mailto:info@digitalspiceup.com"><i class="fa-solid fa-message"></i>info@digitalspiceup.com</a>
+
+
+            <div class="footer-social-icons">
+              <div class="social-icon-group"><a href="https://www.facebook.com/profile.php?id=61552457402967"><i
+                    class="fab fa-facebook-f"></i></a></div>
+              <div class="social-icon-group"><a href="https://pin.it/5uFfr1rU5"><i
+                    class="fa-brands fa-pinterest"></i></a></div>
+              <div class="social-icon-group"><a
+                  href="https://www.linkedin.com/company/digital-marketing-company-in-india-digital-spiceup/?viewAsMember=true"><i
+                    class="fab fa-twitter"></i></a></div>
+              <div class="social-icon-group"><a href="https://www.instagram.com/digitalspiceup/"><i
+                    class="fab fa-instagram"></i></a></div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3 footer-col">
+            <h2 class="footer-heading ms-5">Quick Links</h2>
+            <ul class="footer-links ms-5">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="casestudy.html">Case Study</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-6 col-md-3 footer-col">
+            <h2 class="footer-heading me-5">Services</h2>
+            <ul class="footer-links me-5">
+              <li><a href="web.html">Web Development</a></li>
+              <li><a href="app.html">App Development</a></li>
+              <li><a href="ui.html">UI/UX Design</a></li>
+              <li><a href="software.html">Software Development</a></li>
+              <li><a href="seo.html">Seo Marketing</a></li>
+              <li><a href="digital.html">Digital Marketing</a></li>
+              <li><a href="performance.html">Performance Marketing</a></li>
+
+            </ul>
+          </div>
+
+          <!-- Contact Form Right -->
+          <div class="col-12 col-md-4 footer-right d-flex flex-column justify-content-start">
+            <h2 class="text-white mb-3">Get in Touch</h2>
+
+            <form class="footer-contact-form w-100">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Phone" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="mb-3 flex-grow-1">
+                <textarea class="form-control h-100" rows="4" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn text-dark w-100">Send</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+  
+      </div>
+    </section>
+  </footer>
+     <!-- Footer Bottom / Copyright & Top Arrow -->
+        <div class="footer-bottom-bar">
+          <p class="footer-copy mb-0">&copy; 2026 Digital Spice Up. All rights reserved.</p>
+          <!-- <a href="#" class="footer-back-to-top" id="footerBackToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" aria-label="Scroll to top" title="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a> -->
+        </div>
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="floatingBackToTop" class="floating-back-to-top" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+ 
+  <!-- footer end -->
+   >
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/seo.js"></script>
+  <script src="./js/back-to-top.js"></script>
+</body>
+
+</html>

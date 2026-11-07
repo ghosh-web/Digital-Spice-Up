@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- font awsome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/casestudy.css">
+  <link rel="stylesheet" href="./css/back-to-top.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- nav start -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="./index.html"> <img src="./img/digital-spiceup.webp"
+            alt="Digital Spice Up Logo" class="me-2"></a>
+
+
+        <button class="navbar-toggler" type="button" onclick="showSideBar()">
+          ☰
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-block">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+                <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+                <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+                <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+                <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+                <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+                <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="casestudy.html">Case Study</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav_btn ms-lg-3" href="contact.html">Let’s Chat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="sidebarOverlay" class="sidebar-overlay d-none">
+      <div id="sidebar" class="sidebar">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <a class="navbar-brand fw-bold text-primary" href="#"> <img src="./img/digital-spiceup.webp"
+              alt="Digital Spice Up Logo" class="me-2"></a>
+          <button class="btn btn-sm btn-outline-secondary" onclick="closeSidebar()">✖</button>
+        </div>
+
+        <ul class="list-unstyled">
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+
+          <li class="menu-item" onclick="toggleServices()">Services ▸</li>
+          <ul id="serviceMenu" class="list-unstyled submenu d-none">
+            <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+            <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+            <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+            <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+            <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+            <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+            <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+          </ul>
+
+          <li class="menu-item"><a href="casestudy.html">Case Study</a></li>
+          <li class="menu-item"><a href="blog.html">Blog</a></li>
+          <li class="menu-item cta"><a href="contact.html">Let’s Chat</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- nav end -->
+
+  <!-- loader start -->
+  <div class="loader-wrapper">
+    <div class="dot-loader">
+      <img src="./img/favicon.png" alt="">
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- loader end -->
+  <main>
+    <!-- banner start-->
+    <section class="w-banner">
+      <div class="warddrobedb"><img src="./img/annoorb.webp" alt="">
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- content start -->
+    <section class="warddrobe-about section_padding text-center">
+      <div class="container">
+        <h2 class="annoor-head text-center">Turning digital intent into real transactions
+        </h2>
+        <a href="contact.html" class="kabout-btn ">Let’s Map Your Digital Growth</a>
+      </div>
+    </section>
+    <!-- content end -->
+
+    <!-- csa text start -->
+    <section class="zerto81text section_padding text-center ">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Content -->
+          <div class="col-lg-7 col-md-12 zero-left text-start">
+            <h3>Annoor Nirman Group : Building Digital Foundations for Modern Construction Growth</h3>
+
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="zerobtn1">CLIENT : Annoor Nirman Group</a>
+              <a href="#" class="zerobtn2">FIELD: Construction</a>
+            </div>
+          </div>
+          <!-- Right Content -->
+          <div class="col-lg-5 col-md-12 zero-right text-end">
+            <h4 class="text-center">Engineering construction excellence.Powered by smart web and software solutions</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+    <!-- annoor story start -->
+    <section class="annoor-story section_padding">
+      <div class="container">
+        <div class="brand">
+
+          <div class="brand-grid">
+
+            <!-- Left -->
+            <div class="left-col">
+
+              <!-- Heading OUTSIDE image -->
+              <div class="title-wrap">
+                <h2 class="section-head">
+                  Their <span>Brand</span> Story
+                </h2>
+              </div>
+
+              <div class="brand-img-wrap">
+                <img src="./img/annoor-story.webp" alt="Construction foundation work">
+                <div class="img-overlay"></div>
+              </div>
+
+            </div>
+
+            <!-- Center -->
+            <div class="center-col">
+              <div class="center-content">
+                <img src="./img/house1.webp" alt="House icon">
+
+                <p class="brand-desc">
+                  A trusted <strong>Real Estate and construction</strong>
+                  Company delivering end-to-end property solutions with
+                  <strong>transparency</strong> and <strong>expertise</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right -->
+            <div class="right-col">
+              <div class="brand-img-wrap-right">
+                <img src="./img/annoor-story2.webp" alt="Tower crane construction">
+                <div class="img-overlay"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- annoor story end -->
+    <!-- software star -->
+    <section class="annoor-software">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="row align-items-center">
+
+          <div class="col-lg-4 mb-4 mb-lg-0 ">
+
+
+            <div class="service-item" data-image="./img/hrms-annoor.png" data-title="Hrms" data-span="Software" data-p1="In real estate and construction operations like Annoor Group, efficient workforce management is essential for handling on-site and administrative teams.
+We implemented a centralized HRMS that streamlined attendance, payroll, and employee coordination—bringing better workforce visibility, improved management control, 
+and enhanced overall operational efficiency.">
+              <div class="service-icon">
+                <img src="./img/human-resources.webp" alt="SEO">
+              </div>
+              <div class="service-content">
+                <h3>Hrms Software</h3>
+                <p>HRMS software streamlines employee management, payroll, and HR operations efficiently.</p>
+              </div>
+            </div>
+
+            <div class="service-item active" data-image="./img/annoor-inventory.png" data-title="Inventory Management"
+              data-span="Software" data-p1="For construction and development projects, managing materials and resources efficiently is key to maintaining smooth project flow.
+We introduced a customized inventory system that organized material tracking and stock management—ensuring better visibility, optimized resource utilization, and improved coordination across projects.
+">
+              <div class="service-icon">
+                <img src="./img/inventory-management.webp" alt="Influencer Marketing">
+              </div>
+              <div class="service-content">
+                <h3>Inventory Management Software</h3>
+                <p>Inventory Management Software tracks, manages, and optimizes stock levels efficiently.</p>
+              </div>
+            </div>
+
+
+            <div class="service-item" data-image="./img/annoor-account.png" data-title="Accounting "
+              data-span="Software" data-p1="Strong financial management is crucial for handling project costs, vendor transactions, and overall business performance.
+We implemented an accounting system that streamlined financial tracking and reporting—providing clear insights, better financial control, and enabling more informed decision-making.
+">
+              <div class="service-icon">
+                <img src="./img/accounting.webp" alt="Performance Marketing">
+              </div>
+              <div class="service-content">
+                <h3>Accounting Software</h3>
+                <p>Streamline finances with smart, accurate, and automated accounting solutions.</p>
+              </div>
+            </div>
+
+            <div class="service-item" data-image="./img/crm-annoor.png" data-title="Advanced CRM" data-span="System"
+              data-p1="In a customer-driven real estate business, managing enquiries and communication across platforms plays a vital role in growth.
+We developed an advanced CRM system with WhatsApp automation, social media automation, and centralized customer data management—streamlining lead handling, enabling faster responses, and creating a more efficient and organized sales process.">
+              <div class="service-icon">
+                <img src="./img/crm.webp" alt="Lead Generation">
+              </div>
+              <div class="service-content">
+                <h3>Advanced CRM System</h3>
+                <p>Advanced CRM system for smarter customer management and growth.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="service-details ">
+              <h2>Software Service</h2>
+              <p>1. Heads up, look forward to customers flooding in!</p>
+              <p>2. Plan your lead generation strategy to ensure optimal results.</p>
+              <p>3.We’re your one-stop solution for generating leads by targeting the right audience and
+                increasing your sales.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 text-center">
+            <div class="service-image ms-4">
+              <img src="./img/software-annoor.webp" alt="Service Illustration">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- software end -->
+    <!-- annoor approach start -->
+    <section class="annoor-approach ">
+      <div class=" annoor-story-wrap">
+
+        <div class="a-image">
+          <img src="./img/annoor-approach.png" alt="">
+        </div>
+        <div class="a-content">
+          <h2>Our Approach</h2>
+          <p>
+            We crafted a dynamic and visually refined website that reflects the group’s scale and professionalism. In
+            parallel, we implemented custom-built software solutions to simplify internal workflows, improve data
+            handling, and support better decision-making across departments.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- annoor approach end -->
+
+    <!-- main challenges start -->
+
+    <section class="annoor-challenges">
+      <div class="container position-relative">
+
+        <div class="annoorchallenge-image mx-auto">
+          <img src="./img/annoorchallenge.webp" class="img-fluid" alt="Phones">
+        </div>
+
+        <div class="annoorchallenge-card text-center mx-auto">
+          <h3>Main Challenges</h3>
+          <p>
+            The brand needed a digital presence that could represent multiple business
+            verticals clearly without overwhelming users. Internally, managing operations
+            across different segments required a more centralized and efficient system.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- main challenges end -->
+
+    <!-- technology use start -->
+
+    <section class="annoor-technology section_padding text-center">
+      <div class="container">
+        <h2>Website Design Essentials</h2>
+
+        <h3 class="text-center">Technology We Use</h3>
+        <div class="row g-4 ">
+          <div class="col-6 col-md-4 col-lg-2"><img src="./img/figma2.webp" alt="">
+            <p class="text-center">Figma</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"><img src="./img/html-5.png" alt="">
+            <p class="text-center">Html</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"><img src="./img/css-3.webp" alt="">
+            <p class="text-center">Css</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"><img src="./img/js.png" alt="">
+            <p class="text-center">Javascript</p>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2"><img src="./img/laravel.png" alt="">
+            <p class="text-center">Laravel</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"><img src="./img/mysql-logo.png" alt="">
+            <p class="text-center">MySQL</p>
+          </div>
+        </div>
+      </div>
+      <div class="annoor-color">
+        <h3 class="">Color We Use On Website</h3>
+        <div class="color1">
+          <p class="text-start">HEX #444444 <br>RGB 68 68 68</p>
+        </div>
+        <div class="color2">
+          <p class="text-start">HEX #222222 <br> RGB 34 34 34</p>
+        </div>
+        <div class="color3">
+          <p class="text-start">HEX #FFFFFF <br> RGB 255 255 255 </p>
+        </div>
+        <div class="color4">
+          <p class="text-start">HEX #C4FEC1 <br> RGB 196 254 193 </p>
+        </div>
+      </div>
+      <div class="annoor-font">
+        <h3>Font We Use On Website</h3>
+        <p>Poppins(sans-Serif)</p>
+      </div>
+    </section>
+    <!-- technology use end -->
+    <!-- annoor Imapact -->
+
+    <section class="annoor-impact d-flex align-items-center section_padding">
+      <div class="container text-center">
+
+        <h2 class="impact-title ">Impact Delivered</h2>
+
+        <div class="row">
+
+          <div class="aimpact-right impact-item">
+            <p><strong>35%</strong> increase in<br>
+              website engagement<br>
+              within the first 60 days
+            </p>
+          </div>
+
+          <div class="aimpact-left impact-item">
+            <p> <strong>40%</strong> faster internal<br>
+              process management<br>
+              through custom software</p>
+          </div>
+
+
+          <div class=" aimpact-right impact-item">
+            <p class="mt-md-5">
+              <strong>28% </strong>improvement in<br>
+              user navigation and<br>
+              page interaction
+            </p>
+          </div>
+          <div class="aimpact-left impact-item">
+            <p>
+              Significant boost in brand<br>
+              trust and high-quality<br>
+              business inquiries
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- annor impact end -->
+    <!-- client start -->
+    <section class="logo-carousel section_padding">
+      <h2 class="title">Our Clients</h2>
+      <div class="logo-wrapper">
+        <div class="logo-track">
+          <a href="kraftedtales.html"><img src="./img/kraftedtales-logo.png"
+              alt="best digital marketing company in Howrah India"></a>
+          <a href="shilpakala.html"><img src="./img/shilpakala-logo.png"
+              alt="best digital marketing agency in Howrah India"></a>
+          <a href="kanchenjaunga.html"><img src="./img/kanchenjunga-logo.png"
+              alt="best Mobile app development company in Kolkata India"></a>
+          <a href="annoor.html"><img src="./img/annoor-logo.png"
+              alt="best Mobile app development agency in Kolkata India"></a>
+          <a href="zeroto81.html"><img src="./img/zeroto81-logo.png"
+              alt="popular website development company in Kolkata India"></a>
+          <a href="banglarmisti.html"><img src="./img/banglarmisti-logo.png"
+              alt="top website development company in Kolkata India"></a>
+          <a href="wardrrobe.html"><img src="./img/warddrobe-logo.png"
+              alt="custom website development company in Kolkata India"></a>
+          <a href="sreebangi.html"><img src="./img/sribangi-logo.png"
+              alt="best web development company in Kolkata India"></a>
+          <a href="csa.html"><img src="./img/csa-logo.png" alt="best website design company in Kolkata India"></a>
+          <a href="goservice.html"><img src="./img/go-service.webp"
+              alt="best website design company in Kolkata India"></a>
+          <a href="patco.html"><img src="./img/patco-logo.png" alt="best website design company in Kolkata India"></a>
+          <a href="success.html"><img src="./img/success-logo.webp"
+              alt="best website design company in Kolkata India"></a>
+        </div>
+      </div>
+    </section>
+    <!-- client end -->
+  </main>
+  <!-- footer -->
+  <footer>
+    <footer>
+
+      <section class="footer_section section_padding">
+        <div class="container">
+          <div class="row footer-row mt-5 align-items-stretch">
+
+            <div class="col-12 col-md-2 footer-col py-2">
+              <a href="#" class="footer-logo">
+                <img src="./img/digital-spiceup.webp" alt="Give Logo">
+              </a>
+              <p class="footer-tagline pb-2">
+                Empowering Brands with Digital Intelligence —
+                <span> Digital Spice Up </span> at your service.
+              </p>
+
+
+              <a href="tel:+91 90381 20150"><i class="fa-solid fa-phone"></i> +91 90381 20150</a>
+              <a href="mailto:info@digitalspiceup.com"><i class="fa-solid fa-message"></i>info@digitalspiceup.com</a>
+
+
+              <div class="footer-social-icons">
+                <div class="social-icon-group"><a href="https://www.facebook.com/profile.php?id=61552457402967"><i
+                      class="fab fa-facebook-f"></i></a></div>
+                <div class="social-icon-group"><a href="https://pin.it/5uFfr1rU5"><i
+                      class="fa-brands fa-pinterest"></i></a></div>
+                <div class="social-icon-group"><a
+                    href="https://www.linkedin.com/company/digital-marketing-company-in-india-digital-spiceup/?viewAsMember=true"><i
+                      class="fab fa-twitter"></i></a></div>
+                <div class="social-icon-group"><a href="https://www.instagram.com/digitalspiceup/"><i
+                      class="fab fa-instagram"></i></a></div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-6 col-md-3 footer-col">
+              <h2 class="footer-heading ms-5">Quick Links</h2>
+              <ul class="footer-links ms-5">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="casestudy.html">Case Study</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="col-6 col-md-3 footer-col">
+              <h2 class="footer-heading me-5">Services</h2>
+              <ul class="footer-links me-5">
+                <li><a href="web.html">Web Development</a></li>
+                <li><a href="app.html">App Development</a></li>
+                <li><a href="ui.html">UI/UX Design</a></li>
+                <li><a href="software.html">Software Development</a></li>
+                <li><a href="seo.html">Seo Marketing</a></li>
+                <li><a href="digital.html">Digital Marketing</a></li>
+                <li><a href="performance.html">Performance Marketing</a></li>
+
+              </ul>
+            </div>
+
+            <!-- Contact Form Right -->
+            <div class="col-12 col-md-4 footer-right d-flex flex-column justify-content-start">
+              <h2 class="text-white mb-3">Get in Touch</h2>
+
+              <form class="footer-contact-form w-100">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="tel" class="form-control" placeholder="Phone" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3 flex-grow-1">
+                  <textarea class="form-control h-100" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn text-dark w-100">Send</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+        </div>
+      </section>
+    </footer>
+    <!-- Footer Bottom / Copyright & Top Arrow -->
+    <div class="footer-bottom-bar">
+      <p class="footer-copy mb-0">&copy; 2026 Digital Spice Up. All rights reserved.</p>
+      <!-- <a href="#" class="footer-back-to-top" id="footerBackToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" aria-label="Scroll to top" title="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a> -->
+    </div>
+    <!-- Floating Back to Top Button -->
+    <button type="button" id="floatingBackToTop" class="floating-back-to-top" aria-label="Scroll to top"
+      title="Scroll to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+
+    <!-- end -->
+
+    <!-- footer end -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/casestudy.js"></script>
+    <script src="./js/back-to-top.js"></script>
+</body>
+
+</html>

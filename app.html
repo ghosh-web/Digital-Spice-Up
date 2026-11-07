@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+
+  <!-- font awsome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./css/back-to-top.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="./index.html"> <img src="./img/digital-spiceup.webp"
+            alt="Digital Spice Up Logo" class="me-2"></a>
+
+
+        <button class="navbar-toggler" type="button" onclick="showSideBar()">
+          ☰
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-block">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+                <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+                <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+                <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+                <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+                <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+                <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="casestudy.html">Case Study</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-btn  ms-lg-3" href="contact.html">Let’s Chat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="sidebarOverlay" class="sidebar-overlay d-none">
+      <div id="sidebar" class="sidebar">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <a class="navbar-brand fw-bold text-primary" href="#"> <img src="./img/digital-spiceup.webp"
+              alt="Best website development company in Kolkata India : Digital Spice Up" class="me-2"></a>
+          <button class="btn btn-sm btn-outline-secondary" onclick="closeSidebar()">✖</button>
+        </div>
+
+        <ul class="list-unstyled">
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+
+          <li class="menu-item" onclick="toggleServices()">Services ▸</li>
+          <ul id="serviceMenu" class="list-unstyled submenu d-none">
+            <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+            <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+            <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+            <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+            <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+            <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+            <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+          </ul>
+
+          <li class="menu-item"><a href="casestudy.html">Case Study</a></li>
+          <li class="menu-item"><a href="blog.html">Blog</a></li>
+          <li class="menu-item cta"><a href="contact.html">Let’s Chat</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- nav end -->
+
+  <!-- loader start -->
+  <div class="loader-wrapper">
+    <div class="dot-loader">
+      <img src="./img/favicon.png" alt="Best app-development company in Kolkata India : Digital Spice Up">
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- loader end -->
+
+  <!-- banner start -->
+  <section class="ap-banner"
+    style=" position: relative; width: 100%; height: 450px; overflow: hidden; background-size: contain;">
+    <div style="width: 100%; height: 100%; position: relative;">
+      <video autoplay muted loop playsinline
+        style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; transform: translate(-50%, -50%);">
+        <source src="./assets/video/mobileappv.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="ap-content">
+        <h1>Mobile Application Development
+        </h1>
+        <p>From idea to innovation – we make mobile magic happen</p>
+      </div>
+    </div>
+  </section>
+  <!-- banner end -->
+
+  <!-- mobile-about start -->
+
+  <section class="mobile-app section_padding">
+    <div class="container">
+      <div class="mobile-head text-center">
+        <h2>From Concept <span class="typing-text">To Code — We Build</span> What Matters</h2>
+        <p>We build mobile apps that drive measurable business growth, turning every tap into a meaningful user
+          experience.
+          Our development process blends innovation with precision, ensuring your app delivers maximum performance and
+          ROI.
+          Through data-driven design and seamless functionality, we transform your vision into an app that fuels
+          sustainable success for your brand.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- mobile-about end -->
+
+  <!-- technology start -->
+
+  <section class="section1 section_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="pricing-title">
+
+            <h2> Tools and Technologis We Use</h2>
+          </div>
+        </div>
+      </div>
+      <div class="tab-container">
+        <div class="tab-menu">
+          <div class="tab-item active">
+            <i class="fa fa-code"></i> Frontend Programming Language
+            <!-- <span class="arrow">➔</span> -->
+          </div>
+          <div class="tab-item">
+            <i class="fa fa-cogs"></i> Backend Programming Language
+            <!-- <span class="arrow">➔</span> -->
+          </div>
+          <div class="tab-item">
+            <i class="fa fa-fire"></i> Framework
+            <!-- <span class="arrow">➔</span> -->
+          </div>
+          <div class="tab-item">
+            <i class="fa fa-database"></i> Databases / Data Storages
+            <!-- <span class="arrow">➔</span> -->
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active">
+            <div class="cards">
+              <img width="50" height="50" src="./img/flutter.svg" alt="Top app-development company in Kolkata India" />
+              <p>Flutter</p>
+            </div>
+            <div class="cards">
+              <img width="48" height="48" src="./img/swift.svg" alt="Popular app-development company in Kolkata India" />
+              <p>Swift</p>
+            </div>
+            <div class="cards">
+              <img width="48" height="48" src="./img/kotlin.svg" alt="Trusted app-development company in Kolkata India" />
+              <p>Kotlin</p>
+            </div>
+
+            <div class="cards">
+              <img width="48" height="48" src="./img/atom.webp" alt="Premium app-development company in Kolkata India" />
+              <p>React Native</p>
+            </div>
+          </div>
+          <div class="tab-pane">
+            <div class="cards">
+              <img width="48" height="48" src="./img/python.webp" alt="Premium app-development company in Kolkata India" />
+              <p>Python</p>
+            </div>
+            <div class="cards">
+              <img width="50" height="50" src="./img/nodejs.png" alt="Trusted app-development company in Kolkata India" />
+              <p>Node.js</p>
+            </div>
+            <div class="cards">
+              <img width="50" height="50" src="./img/java.png" alt="Popular app-development company in Kolkata India" />
+              <p>Java</p>
+            </div>
+            <div class="cards">
+              <img width="50" height="50" src="./img/php.webp" alt="Best app-development company in Kolkata India" />
+              <p>PHP</p>
+            </div>
+          </div>
+          <div class="tab-pane">
+            <div class="cards">
+              <img width="48" height="48" src="./img/laravel.png" alt="Trusted app-development company in Kolkata India" />
+              <p>Laravel</p>
+            </div>
+            <div class="cards">
+              <img width="50" height="50" src="./img/codeigniter.webp" alt="Popular app-development company in Kolkata India" />
+              <p>Codeigniter</p>
+            </div>
+            <div class="cards">
+              <img width="50" height="50" src="./img/circled-m-emoji.png" alt="Best app-development company in Kolkata India" />
+              <p>MEAN</p>
+            </div>
+            <div class="cards">
+              <img width="48" height="48" src="./img/django.png" alt="Premium app-development company in Kolkata India" />
+              <p>Django</p>
+            </div>
+          </div>
+          <div class="tab-pane">
+            <div class="cards">
+              <img width="48" height="48" src="./img/microsoft-sql-server.png" alt="Best app-development company in Kolkata India" />
+              <p>SQL Server</p>
+            </div>
+            <div class="cards">
+              <img width="48" height="48" src="./img/mysql-logo.png" alt="Premium app-development company in Kolkata India" />
+              <p>MySQL</p>
+            </div>
+            <div class="cards">
+              <img width="48" height="48" src="./img/mongo-db.png" alt="Popular app-development company in Kolkata India" />
+              <p>MongoDB</p>
+            </div>
+            <div class="cards">
+              <img width="48" height="48" src="./img/firebase.png" alt="Trusted app-development company in Kolkata India" />
+              <p>Firebase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- technology end -->
+
+  <!-- planning start -->
+
+  <section class="transform-section section_padding">
+    <div class="container">
+
+      <div class="transform-row">
+        <div class="transform-column">
+          <h2 class="thead">From Start To Finish</h2>
+
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Project Discussion
+              </h4>
+              <p>Once you register, we’ll refine your ideas together before development strategically aligned.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Wireframing & Designing</h4>
+              <p>Our design previews ensure you see exactly how your app will look and feel, with complete clarity.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Development Stage</h4>
+              <p>Your vision evolves into a robust, high-performing digital product with us, from concept to launch.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Testing & Quality Assurance</h4>
+              <p>Our advanced testing ensures quality, eliminating errors before moving ahead with confidence.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="tcircle-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Service and Support</h4>
+              <p>We provide ongoing app support and maintenance after launch, delivering uninterrupted user experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- <button type="button" class="chat-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Explore now
+          </button> -->
+
+
+        </div>
+        <!-- Right Column -->
+        <div class="transform-column">
+          <div class="donations-container">
+            <div class="img-wrapper">
+              <img src="./img/appde.webp" alt="Premium app-development company in Kolkata India">
+            </div>
+            <div class="donations-img">
+              <img src="./img/ios.jpeg" alt="Popular app-development company in Kolkata India" class="secondary-image">
+              <img src="./img/appd.webp" alt="Best website development company in Kolkata India" class="third-image">
+            </div>
+            <div class="testimonial-card-one">
+              <img src="./img/quotation.png" alt="Trusted app-development company in Kolkata India">
+              <p>"Crafting responsive, user-friendly, and high-performing websites that bring your digital vision to
+                life."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- planning end -->
+
+  <!-- service -->
+
+  <section class="service-section section_padding">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg">
+          <div class="pro-card">
+            <div class="pro-image-container">
+              <img src="./img/ui-design.png" alt="Hybrid App Development" class="pro-image">
+            </div>
+            <h5 class="profile-head">Hybrid App Development</h5>
+            <p class="profile-text py-2">
+              Hybrid app development blends native and web technologies for fast, affordable, cross-platform mobile
+              solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg">
+          <div class="pro-card stagger-effect">
+            <div class="pro-image-container">
+              <img src="./img/mobile-development (1).png" alt="Native App Development" class="pro-image">
+            </div>
+            <h5 class="profile-head">Native App Development</h5>
+            <p class="profile-text py-2">
+              Native app development ensures high performance, smooth experience, and complete integration for specific
+              platforms.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg">
+          <div class="pro-card">
+            <div class="pro-image-container">
+              <img src="./img/app-development (3).png" alt="Cross App Development" class="pro-image">
+            </div>
+            <h5 class="profile-head">Cross App Development</h5>
+            <p class="profile-text py-2">
+              Cross-platform app development allows code sharing, faster deployment, and reliable performance on
+              multiple devices.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg">
+          <div class="pro-card stagger-effect">
+            <div class="pro-image-container">
+              <img src="./img/android (1).png" alt="Android App Development" class="pro-image">
+            </div>
+            <h5 class="profile-head">Android App Development</h5>
+            <p class="profile-text py-2">
+              Android app development builds scalable, user-friendly applications optimized for smooth performance on
+              all devices.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg">
+          <div class="pro-card">
+            <div class="pro-image-container">
+              <img src="./img/iphone.png" alt="iOS App Development" class="pro-image">
+            </div>
+            <h5 class="profile-head">iOS App Development</h5>
+            <p class="profile-text py-2">
+              iOS app development creates secure, high-quality applications optimized for smooth performance across all
+              devices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end -->
+
+  <!-- testimonial -->
+  <section class="testimonial section_padding">
+    <h2 class="text-center">Client Testimonials</h2>
+    <div class="container">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Krafted Tales</h3>
+                  <p class="testimonial-date">8th August 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    We chose Digital Spice Up for website and software needs; their strategy, design, and support helped
+                    Krafted Tales scale effortlessly.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Success Mantra</h3>
+                  <p class="testimonial-date">20th August 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Professional team, seamless communication, and top-quality development gave our homestay a modern,
+                    guest-loved online presence.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Kanchenjauga View Point Homestay</h3>
+                  <p class="testimonial-date">8th Oct 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Professional team, seamless communication, and top-quality development gave our homestay a modern,
+                    guest-loved online presence.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Zero to 81</h3>
+                  <p class="testimonial-date">5th Nov 2024</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Digital Spice Up built our fast, modern e-commerce site and boosted revenue through effective
+                    performance marketing. Skilled, dedicated team.
+
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Banglar Misti</h3>
+                  <p class="testimonial-date">3rd Dec 2024</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+
+                    Fantastic work by Digital Spice Up—great e-commerce for Banglar Misti, strong SEO marketing,
+                    increased brand reach, and steady business growth.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial-card text-center">
+                  <h3 class="testimonial-name">Chakraborty Security Agency</h3>
+                  <p class="testimonial-date">10th june 2025</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    Digital Spice Up delivered an efficient website with strong SEO results. Responsive, knowledgeable
+                    team—truly dedicated and we’re very happy.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonial end -->
+
+  <!-- faq -->
+
+  <section class="faq-section section_padding">
+    <div class="container">
+      <div class="main-faq">
+
+        <div class="faq-question">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+
+          <div class="accordion" id="faqAccordion">
+
+            <!-- Question 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne">
+                  1. Can you develop AI-powered mobile apps?
+
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, we can develop AI-powered mobile apps based on your business requirements. As a
+                  best app development company in India, we can integrate AI chatbots, voice assistants,
+                  smart recommendations, image and document processing, personalized experiences, predictive
+                  insights, automation, and other AI features to make your app more intelligent and useful.
+
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Build with AI</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">
+                  2. What types of mobile apps do you develop?
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We develop Android, iOS, native, hybrid, and cross-platform mobile applications.
+                  We can build apps for businesses, startups, e-commerce, booking platforms, education,
+                  healthcare, travel, finance, and other industries based on specific requirements.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Build Your App</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree">
+                  3. How much does mobile app development cost?
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The cost depends on the app's features, design, number of platforms, integrations, technology,
+                  backend requirements, and overall complexity. We first understand your requirements and then
+                  provide a customized quotation based on your project scope.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Get a Quote</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour">
+                  4. Can you develop apps for both Android and iOS?
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. We can develop mobile applications for both Android and iOS. Depending on your requirements,
+                  we can use technologies such as Flutter, React Native, Swift, or Kotlin to create a smooth and
+                  reliable experience across different devices.
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Start Your App</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive">
+                  5. Do you provide app maintenance and support after launch?
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. We provide ongoing app maintenance and technical support after launch. This can include bug
+                  fixing,
+                  performance improvements, security updates, compatibility updates, feature enhancements, and other
+                  technical
+                  support required to keep your app running smoothly.
+
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Get Support</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix">
+                  6. How long does it take to develop a mobile app?
+
+                  <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The development time depends on the number of screens, features, integrations,
+                  platform, design requirements, and overall complexity of the app. After understanding
+                  your requirements, we provide a clear development plan and estimated timeline.
+
+                </div>
+                <div class="text-center">
+                  <a href="contact.html">Discuss Your App</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Side Image -->
+        <div class="image-section">
+          <div class="image-container">
+            <img src="./img/faq.webp" alt="FAQ image" id="faqImage">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- faq end -->
+
+  <!-- logo carousel -->
+  <section class="logo-carousel section_padding">
+      <h2 class="title">Our Clients</h2>
+   <div class="logo-wrapper">
+        <div class="logo-track">
+          <a href="kraftedtales.html"><img src="./img/kraftedtales-logo.png"
+              alt="best digital marketing company in Howrah India"></a>
+          <a href="shilpakala.html"><img src="./img/shilpakala-logo.png"
+              alt="best digital marketing agency in Howrah India"></a>
+          <a href="kanchenjaunga.html"><img src="./img/kanchenjunga-logo.png"
+              alt="best Mobile app development company in Kolkata India"></a>
+          <a href="annoor.html"><img src="./img/annoor-logo.png"
+              alt="best Mobile app development agency in Kolkata India"></a>
+          <a href="zeroto81.html"><img src="./img/zeroto81-logo.png"
+              alt="popular website development company in Kolkata India"></a>
+          <a href="banglarmisti.html"><img src="./img/banglarmisti-logo.png"
+              alt="top website development company in Kolkata India"></a>
+          <a href="wardrrobe.html"><img src="./img/warddrobe-logo.png"
+              alt="custom website development company in Kolkata India"></a>
+          <a href="sreebangi.html"><img src="./img/sribangi-logo.png"
+              alt="best web development company in Kolkata India"></a>
+          <a href="csa.html"><img src="./img/csa-logo.png" alt="best website design company in Kolkata India"></a>
+          <a href="goservice.html"><img src="./img/go-service.webp"
+              alt="best website design company in Kolkata India"></a>
+              <a href="patco.html"><img src="./img/patco-logo.png"
+              alt="best website design company in Kolkata India"></a>
+                     <a href="success.html"><img src="./img/success-logo.webp"
+              alt="best website design company in Kolkata India"></a>
+        </div>
+      </div>
+    </section>
+  <!-- logo end -->
+
+  <!-- footer start -->
+  <footer>
+
+    <section class="footer_section section_padding">
+      <div class="container">
+        <div class="row footer-row mt-5 align-items-stretch">
+
+          <div class="col-12 col-md-2 footer-col py-2">
+            <a href="#" class="footer-logo">
+              <img src="./img/digital-spiceup.webp" alt="Give Logo">
+            </a>
+            <p class="footer-tagline pb-2">
+              Empowering Brands with Digital Intelligence —
+              <span> Digital Spice Up </span> at your service.
+            </p>
+
+
+            <a href="tel:+91 90381 20150"><i class="fa-solid fa-phone"></i> +91 90381 20150</a>
+            <a href="mailto:info@digitalspiceup.com"><i class="fa-solid fa-message"></i>info@digitalspiceup.com</a>
+
+
+            <div class="footer-social-icons">
+              <div class="social-icon-group"><a href="https://www.facebook.com/profile.php?id=61552457402967"><i
+                    class="fab fa-facebook-f"></i></a></div>
+              <div class="social-icon-group"><a href="https://pin.it/5uFfr1rU5"><i
+                    class="fa-brands fa-pinterest"></i></a></div>
+              <div class="social-icon-group"><a
+                  href="https://www.linkedin.com/company/digital-marketing-company-in-india-digital-spiceup/?viewAsMember=true"><i
+                    class="fab fa-twitter"></i></a></div>
+              <div class="social-icon-group"><a href="https://www.instagram.com/digitalspiceup/"><i
+                    class="fab fa-instagram"></i></a></div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3 footer-col">
+            <h2 class="footer-heading ms-5">Quick Links</h2>
+            <ul class="footer-links ms-5">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="casestudy.html">Case Study</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-6 col-md-3 footer-col">
+            <h2 class="footer-heading me-5">Services</h2>
+            <ul class="footer-links me-5">
+              <li><a href="web.html">Web Development</a></li>
+              <li><a href="app.html">App Development</a></li>
+              <li><a href="ui.html">UI/UX Design</a></li>
+              <li><a href="software.html">Software Development</a></li>
+              <li><a href="seo.html">Seo Marketing</a></li>
+              <li><a href="digital.html">Digital Marketing</a></li>
+              <li><a href="performance.html">Performance Marketing</a></li>
+
+            </ul>
+          </div>
+
+          <!-- Contact Form Right -->
+          <div class="col-12 col-md-4 footer-right d-flex flex-column justify-content-start">
+            <h2 class="text-white mb-3">Get in Touch</h2>
+
+            <form class="footer-contact-form w-100">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Phone" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="mb-3 flex-grow-1">
+                <textarea class="form-control h-100" rows="4" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn text-dark w-100">Send</button>
+            </form>
+          </div>
+
+        </div>
+
+      
+      </div>
+    </section>
+  </footer>
+  <!-- Footer Bottom / Copyright & Top Arrow -->
+        <div class="footer-bottom-bar">
+          <p class="footer-copy mb-0">&copy; 2026 Digital Spice Up. All rights reserved.</p>
+          <!-- <a href="#" class="footer-back-to-top" id="footerBackToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" aria-label="Scroll to top" title="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a> -->
+        </div>
+  <!-- Floating Back to Top Button -->
+<button type="button" id="floatingBackToTop" class="floating-back-to-top" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/back-to-top.js"></script>
+</body>
+
+</html>

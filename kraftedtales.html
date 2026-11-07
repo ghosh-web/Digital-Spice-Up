@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- font awsome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+  </style>
+
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/casestudy.css">
+  <link rel="stylesheet" href="./css/back-to-top.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="./index.html"> <img src="./img/digital-spiceup.webp"
+            alt="Digital Spice Up Logo" class="me-2"></a>
+
+
+        <button class="navbar-toggler" type="button" onclick="showSideBar()">
+          ☰
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-block">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+                <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+                <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+                <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+                <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+                <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+                <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="casestudy.html">Case Study</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav_btn ms-lg-3" href="contact.html">Let’s Chat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="sidebarOverlay" class="sidebar-overlay d-none">
+      <div id="sidebar" class="sidebar">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <a class="navbar-brand fw-bold text-primary" href="#"> <img src="./img/digital-spiceup.webp"
+              alt="Digital Spice Up Logo" class="me-2"></a>
+          <button class="btn btn-sm btn-outline-secondary" onclick="closeSidebar()">✖</button>
+        </div>
+
+        <ul class="list-unstyled">
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+
+          <li class="menu-item" onclick="toggleServices()">Services ▸</li>
+          <ul id="serviceMenu" class="list-unstyled submenu d-none">
+            <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+            <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+            <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+            <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+            <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+            <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+            <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+          </ul>
+
+          <li class="menu-item"><a href="casestudy.html">Case Study</a></li>
+          <li class="menu-item"><a href="blog.html">Blog</a></li>
+          <li class="menu-item cta"><a href="contact.html">Let’s Chat</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- nav end -->
+
+
+  <!-- loader start -->
+  <div class="loader-wrapper">
+    <div class="dot-loader">
+      <img src="./img/favicon.png" alt="">
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- loader end -->
+  <main>
+    <!-- banner start -->
+    <section class="k-banner">
+      <div class="kraftedb"><img src="./img/kraftedtales.webp" alt="">
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- content start -->
+    <section class="krafted-about section_padding text-center">
+      <div class="container">
+        <h2 class="kabout-head text-center">Optimised design. Smarter systems. Better results</h2>
+        <a href="contact.html" class="kabout-btn ">Let’s Map Your Digital Growth</a>
+      </div>
+    </section>
+    <!-- content end -->
+    <!-- csa text start -->
+    <section class="zerto81text section_padding text-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Content -->
+          <div class="col-lg-7 col-md-12 zero-left text-start">
+            <h3>Krafted Tales:Building a Performance-Driven eCommerce Platform</h3>
+
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="zerobtn1">CLIENT:Krafted Tales</a>
+              <a href="#" class="zerobtn2">FIELD:Ecommerce</a>
+            </div>
+          </div>
+          <!-- Right Content -->
+          <div class="col-lg-5 col-md-12 zero-right text-end">
+            <h4 class="text-center">Optimized for performance, scale, and customer experience—helping brands rank,
+              convert, and grow online.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+    <!-- their story start -->
+    <section class="their-story  text-center section_padding">
+      <div class="container">
+        <h2 class="kstory">Their Story</h2>
+        <p class="kstory-text">KraftedTales is a handcrafted jewellery brand where every piece carries meaning,
+          artistry,
+          and cultural depth.
+          Blending traditional craftsmanship with modern design, the brand was built to offer jewellery that feels
+          personal, timeless, and thoughtfully made.</p>
+      </div>
+    </section>
+    <!-- their story end -->
+
+    <!-- their goal -->
+    <section class="ktheir-goal section_padding">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-lg-6 col-md-6 text-center">
+            <img src="./img/kgoal.jpg" alt="Their Goal" class=" kgoal-img">
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="kgoal-content text-center text-md-start">
+              <h3>The Client's Vision</h3>
+              <p>
+                As the brand began to grow, the team wanted their
+                website to reflect the same care and detail as their
+                jewellery. The goal was to create a smooth, intuitive
+                online experience where customers could easily explore collections,
+                connect with the brand, and shop with confidence—without friction or
+                confusion. At the same time, they aimed to streamline their day-to-day
+                business operations by improving internal processes, enabling better order
+                management, stock visibility, and overall business efficiency through a
+                connected digital ecosystem.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- content end -->
+
+    <!-- what stood in their way -->
+
+    <section class="their-stood section_padding">
+      <div class="stood">
+        <h3 class="text-center pt-3">What Stood in Their Way</h3>
+        <p class="text-center">
+          Their existing website, developed by a previous agency, lacked usability. Navigation was unclear, customer
+          interaction was low, and visitors were dropping
+          off—leading to missed sales despite strong product appeal.</p>
+      </div>
+      </div>
+    </section>
+
+    <!-- what stood in their way end -->
+
+    <!-- approach start -->
+    <section class="kapproach section_padding">
+      <div class="container">
+        <div class="row align-items-center ">
+          <div class="col-lg-6 col-md-6">
+            <img src="./img/stood.webp" alt="">
+          </div>
+
+          <div class="col-lg-6 col-md-6 kapproach-image">
+            <h3>Our Approach</h3>
+            <p>We designed and developed a modern, user-friendly, and fully responsive eCommerce website with intuitive
+              navigation and a seamless shopping experience. To support the client's business growth beyond the website,
+              we also developed and integrated custom business management software that streamlined daily operations,
+              improved workflow efficiency, and ensured seamless coordination across different business processes.
+              Additionally, we implemented eCommerce SEO to enhance search visibility, attract high-intent organic
+              traffic, and drive sustainable online sales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- approach end -->
+
+    <!-- software start -->
+
+    <section class="kraftedtales-software section_padding text-center">
+      <div class="container">
+
+        <!-- Row 1: Text left, Image right -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="kraftedaccount">
+
+              <h2>Accounting Software</h2>
+              <p class="text1">Maintaining accurate financial records is crucial for profitability,
+                yet manual accounting can create inconsistencies and unclear cash flow.</p>
+              <p class="text2">We introduced a structured accounting system that streamlined financial tracking,
+                improved reporting accuracy,
+                and enabled better financial decisions—resulting in stronger margin control and revenue clarity.</p>
+
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 pb-3">
+            <div class="img-wrap">
+              <div class="img-frame">
+                <img src="./img/krafted-account.webp" alt="Accounting Software">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Row 2: Image left, Text right -->
+        <div class="row pt-3">
+          <div class="col-lg-6 col-md-6">
+            <div class="img-wrap">
+              <div class="img-frame">
+                <img src="./img/krafted-inventory.webp" alt="Inventory Software">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="kraftedaccount-two">
+
+              <h2>Inventory Management Software</h2>
+              <p class="text3">For handcrafted jewellery brands like Krafted Tales, tracking unique pieces and
+                fluctuating stock manually often leads to mismatches and missed sales opportunities.</p>
+              <p class="text4">We implemented a customized inventory system that improved stock visibility and
+                accuracy—reducing errors, preventing stock issues, and ensuring smoother order management.</p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- software end -->
+
+    <!-- technology start -->
+
+    <section class="ktechnology section_padding  text-center">
+      <div class="container">
+        <h2>Website Design Essentials</h2>
+
+        <div class="krafted-technology">
+          <div>
+            <h4>Technology Use for Website</h4>
+            <img src="./img/kwebsite.jpg" alt="">
+          </div>
+          <div>
+            <h4>Technology Use for Software</h4>
+            <img src="./img/ksoftware.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- technology end -->
+    <!-- typography and color start -->
+
+    <section class="typography  text-center">
+      <div class="container">
+
+
+        <h3>Color We Use On this Website</h3>
+        <div class="row justify-content-between align-items-center pb-3">
+
+          <div class="col-lg-3 col-md-3 col-6 mb-3">
+            <img src="./img/lgreen.webp" alt="lgreen Color" class="img-fluid">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-6 mb-3">
+            <img src="./img/grey-black.webp" alt="Grey Black Color" class="img-fluid">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-6 mb-3">
+            <img src="./img/white.webp" alt="white Color" class="img-fluid">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-6 mb-3">
+            <img src="./img/dgreen.webp" alt="dgreen Color" class="img-fluid">
+          </div>
+        </div>
+        <h3 class="pt-3">Font We Use on this Website</h3>
+        <p class="">Prosto One <span class="prosto"></span>,Poppins <span class="poppins"></span></p>
+      </div>
+    </section>
+    <!-- typography and color end -->
+
+    <!-- impact -->
+    <section class="kimpact section_padding">
+      <div class="container">
+        <h2>The Impact We Delivered</h2>
+
+        <div class="row align-items-center">
+
+          <!-- Left Content -->
+          <div class="col-lg-6 col-md-6 col-sm-12 ">
+            <div class="impact-wrapper">
+
+              <!-- Card 1 -->
+              <div class="impact-card d-flex align-items-center">
+                <div class="impact-icon">
+                  <img src="./img/Teamwork.gif" alt="">
+                </div>
+                <div class="impact-text">
+                  <h4>20%</h4>
+                  <p>conversion growth turning visitors into buyers</p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="impact-card d-flex align-items-center">
+                <div class="impact-icon">
+                  <img src="./img/growth-icon.gif" alt="">
+                </div>
+                <div class="impact-text">
+                  <h4>28%</h4>
+                  <p> website traffic growth in 2 months</p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="impact-card d-flex align-items-center">
+                <div class="impact-icon">
+                  <img src="./img/Revenue.gif" alt="">
+                </div>
+                <div class="impact-text">
+                  <h4>22%</h4>
+                  <p> higher session duration with deeper product views</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="col-lg-6 col-md-6 col-sm-12 text-center mb-2">
+            <div class="kimpact-img">
+              <img src="./img/ktwo.webp" alt="Impact Image" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- end -->
+
+    <!-- our client -->
+<section class="logo-carousel section_padding">
+      <h2 class="title">Our Clients</h2>
+  <div class="logo-wrapper">
+        <div class="logo-track">
+          <a href="kraftedtales.html"><img src="./img/kraftedtales-logo.png"
+              alt="best digital marketing company in Howrah India"></a>
+          <a href="shilpakala.html"><img src="./img/shilpakala-logo.png"
+              alt="best digital marketing agency in Howrah India"></a>
+          <a href="kanchenjaunga.html"><img src="./img/kanchenjunga-logo.png"
+              alt="best Mobile app development company in Kolkata India"></a>
+          <a href="annoor.html"><img src="./img/annoor-logo.png"
+              alt="best Mobile app development agency in Kolkata India"></a>
+          <a href="zeroto81.html"><img src="./img/zeroto81-logo.png"
+              alt="popular website development company in Kolkata India"></a>
+          <a href="banglarmisti.html"><img src="./img/banglarmisti-logo.png"
+              alt="top website development company in Kolkata India"></a>
+          <a href="wardrrobe.html"><img src="./img/warddrobe-logo.png"
+              alt="custom website development company in Kolkata India"></a>
+          <a href="sreebangi.html"><img src="./img/sribangi-logo.png"
+              alt="best web development company in Kolkata India"></a>
+          <a href="csa.html"><img src="./img/csa-logo.png" alt="best website design company in Kolkata India"></a>
+          <a href="goservice.html"><img src="./img/go-service.webp"
+              alt="best website design company in Kolkata India"></a>
+              <a href="patco.html"><img src="./img/patco-logo.png"
+              alt="best website design company in Kolkata India"></a>
+                     <a href="success.html"><img src="./img/success-logo.webp"
+              alt="best website design company in Kolkata India"></a>
+        </div>
+      </div>
+    </section>
+    <!-- client end -->
+  </main>
+
+  <!-- footer start -->
+  <footer>
+
+    <section class="footer_section section_padding">
+      <div class="container">
+        <div class="row footer-row mt-5 align-items-stretch">
+
+          <div class="col-12 col-md-2 footer-col py-2">
+            <a href="#" class="footer-logo">
+              <img src="./img/digital-spiceup.webp" alt="Give Logo">
+            </a>
+            <p class="footer-tagline pb-2">
+              Empowering Brands with Digital Intelligence —
+              <span> Digital Spice Up </span> at your service.
+            </p>
+
+
+            <a href="tel:+91 90381 20150"><i class="fa-solid fa-phone"></i> +91 90381 20150</a>
+            <a href="mailto:info@digitalspiceup.com"><i class="fa-solid fa-message"></i>info@digitalspiceup.com</a>
+
+
+            <div class="footer-social-icons">
+              <div class="social-icon-group"><a href="https://www.facebook.com/profile.php?id=61552457402967"><i
+                    class="fab fa-facebook-f"></i></a></div>
+              <div class="social-icon-group"><a href="https://pin.it/5uFfr1rU5"><i
+                    class="fa-brands fa-pinterest"></i></a></div>
+              <div class="social-icon-group"><a
+                  href="https://www.linkedin.com/company/digital-marketing-company-in-india-digital-spiceup/?viewAsMember=true"><i
+                    class="fab fa-twitter"></i></a></div>
+              <div class="social-icon-group"><a href="https://www.instagram.com/digitalspiceup/"><i
+                    class="fab fa-instagram"></i></a></div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3 footer-col">
+            <h2 class="footer-heading ms-5">Quick Links</h2>
+            <ul class="footer-links ms-5">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="casestudy.html">Case Study</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-6 col-md-3 footer-col">
+            <h2 class="footer-heading me-5">Services</h2>
+            <ul class="footer-links me-5">
+              <li><a href="web.html">Web Development</a></li>
+              <li><a href="app.html">App Development</a></li>
+              <li><a href="ui.html">UI/UX Design</a></li>
+              <li><a href="software.html">Software Development</a></li>
+              <li><a href="seo.html">Seo Marketing</a></li>
+              <li><a href="digital.html">Digital Marketing</a></li>
+              <li><a href="performance.html">Performance Marketing</a></li>
+
+            </ul>
+          </div>
+
+          <!-- Contact Form Right -->
+          <div class="col-12 col-md-4 footer-right d-flex flex-column justify-content-start">
+            <h2 class="text-white mb-3">Get in Touch</h2>
+
+            <form class="footer-contact-form w-100">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Phone" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="mb-3 flex-grow-1">
+                <textarea class="form-control h-100" rows="4" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn text-dark w-100">Send</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+  
+      </div>
+    </section>
+  </footer>
+     <!-- Footer Bottom / Copyright & Top Arrow -->
+        <div class="footer-bottom-bar">
+          <p class="footer-copy mb-0">&copy; 2026 Digital Spice Up. All rights reserved.</p>
+          <!-- <a href="#" class="footer-back-to-top" id="footerBackToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" aria-label="Scroll to top" title="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a> -->
+        </div>
+  <!-- Floating Back to Top Button -->
+   <button type="button" id="floatingBackToTop" class="floating-back-to-top" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+   
+  
+  <!-- footer end -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/casestudy.js"></script>
+  <script src="./js/back-to-top.js"></script>
+</body>
+
+</html>

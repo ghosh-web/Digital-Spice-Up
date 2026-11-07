@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- font awsome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- petrona -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+
+  <!-- Amethysta -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Amethysta&display=swap');
+  </style>
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/casestudy.css">
+  <link rel="stylesheet" href="./css/back-to-top.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="./index.html"> <img src="./img/digital-spiceup.webp"
+            alt="Digital Spice Up Logo" class="me-2"></a>
+
+
+        <button class="navbar-toggler" type="button" onclick="showSideBar()">
+          ☰
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-block">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+                <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+                <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+                <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+                <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+                <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+                <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="casestudy.html">Case Study</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav_btn ms-lg-3" href="contact.html">Let’s Chat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="sidebarOverlay" class="sidebar-overlay d-none">
+      <div id="sidebar" class="sidebar">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <a class="navbar-brand fw-bold text-primary" href="#"> <img src="./img/digital-spiceup.webp"
+              alt="Digital Spice Up Logo" class="me-2"></a>
+          <button class="btn btn-sm btn-outline-secondary" onclick="closeSidebar()">✖</button>
+        </div>
+
+        <ul class="list-unstyled">
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+
+          <li class="menu-item" onclick="toggleServices()">Services ▸</li>
+          <ul id="serviceMenu" class="list-unstyled submenu d-none">
+            <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+            <li><a class="dropdown-item" href="software.html">Software Development</a></li>
+            <li><a class="dropdown-item" href="ui.html">UI/UX Design</a></li>
+            <li><a class="dropdown-item" href="app.html">Mobile App Development</a></li>
+            <li><a class="dropdown-item" href="performance.html">Performance Marketing</a></li>
+            <li><a class="dropdown-item" href="seo.html">Search Engine Optimization</a></li>
+            <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+          </ul>
+
+          <li class="menu-item"><a href="casestudy.html">Case Study</a></li>
+          <li class="menu-item"><a href="blog.html">Blog</a></li>
+          <li class="menu-item cta"><a href="contact.html">Let’s Chat</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- nav end -->
+
+  <!-- loader start -->
+  <div class="loader-wrapper">
+    <div class="dot-loader">
+      <img src="./img/favicon.png" alt="">
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- loader end -->
+  <main>
+
+    <!-- banner start -->
+    <section class="k-banner">
+      <div class="kraftedb"><img src="./img/banglarmisti.webp" alt="">
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- content start -->
+    <section class="banglarmisti-about section_padding text-center">
+      <div class="container">
+        <h2 class="babout-head text-center">A simpler, smarter online </h2>
+        <h2 class="b-span"> How thoughtful design made the difference.</h2>
+        <a href="contact.html" class="kabout-btn ">Let’s Map Your Digital Growth</a>
+      </div>
+    </section>
+    <!-- content end -->
+
+    <!-- csa text start -->
+    <section class="zerto81text section_padding text-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Content -->
+          <div class="col-lg-7 col-md-12 zero-left text-start">
+            <h3>Banglar Misti:Engineering a Fast & Reliable eCommerce Store</h3>
+
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="zerobtn1">CLIENT:Banglar Misti</a>
+              <a href="#" class="zerobtn2">FIELD:Ecommerce</a>
+            </div>
+          </div>
+          <!-- Right Content -->
+          <div class="col-lg-5 col-md-12 zero-right text-end">
+            <h4 class="text-center">Designed for modern digital growth—fast, scalable, and optimized to rank higher and
+              convert better.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+
+    <!-- their story -->
+    <section class="b-story g">
+      <div class="container b-story-wrap">
+
+        <div class="b-image">
+          <img src="./img/banglarmisti-logo.png" alt="Banglar Misti">
+        </div>
+
+        <div class="b-content">
+          <h2>Their Story</h2>
+          <p>
+            We created a clean, user-friendly, and fully responsive website with seamless navigation and clear product
+            journeys. Additionally, we implemented eCommerce Search Engine Optimization (SEO) to improve visibility,
+            drive organic traffic, and boost online sales.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- their story end -->
+    <!-- mockup start -->
+    <section class="hero-showcase ">
+      <div class="container hero-mockup">
+
+        <!-- LEFT SIDE : Single Combined Image -->
+        <div class="left-images">
+          <img src="./img/mockup.webp" alt="Website Mockup">
+        </div>
+
+        <!-- RIGHT SIDE : Text on Image Background -->
+        <div class="right-text">
+          <div class="speech-box-bg">
+            Bringing Kolkata’s Sweet Magic to Every<br>
+            Corner of India.
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- mockup end -->
+    <!-- struggle start -->
+    <section class="b-story ">
+      <div class="container b-story-wrap">
+
+        <div class="b-image">
+          <img src="./img/b-struggle.webp" alt="Banglar Misti">
+        </div>
+
+        <div class="b-content">
+          <h2>Where They Struggled</h2>
+          <p>The old Banglar Misti website lacked clarity and
+            good user experience. Customers found it difficult to browse,
+            interact, or complete purchases—resulting in low conversions
+            and missed sales opportunities, despite the strong appeal of
+            their Kolkata-famous sweets.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!--struggle end -->
+
+    <!--our approach  start-->
+    <section class="b-story ">
+      <div class="container b-story-wrap">
+        <div class="b-content">
+          <h2>Our Approach</h2>
+          <p>We designed a clean, responsive, and easy-to-use website that beautifully showcases Kolkata’s iconic
+            sweets.
+            Smooth navigation and simple product paths ensure customers across India can explore, choose, and enjoy
+            authentic Kolkata flavours delivered straight to their homes.
+
+          </p>
+        </div>
+        <div class="b-image">
+          <img src="./img/b-circle.webp" alt="Banglar Misti">
+        </div>
+
+      </div>
+    </section>
+    <!--our approach end  -->
+
+    <!-- typography start -->
+
+    <section class="btechnology section_padding text-center">
+      <div class="container">
+        <h2>Website Design Essentials</h2>
+        <h3>Technology We Use </h3>
+        <div class="btechnology-wrap">
+          <div class="tech-item">
+            <img src="./img/figma1.webp" alt="Figma">
+          </div>
+
+          <div class="tech-item">
+            <img src="./img/wordpress1.webp" alt="WordPress">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- technology end -->
+    <!-- typography and color start -->
+
+    <section class="btypography text-center">
+      <div class="container">
+        <h3>Color Use On Website</h3>
+
+        <div class="row justify-content-between align-items-center pb-3">
+
+          <div class="col-lg-4 col-md-4 col-6 mb-3">
+            <img src="./img/sky.webp" alt="lgreen Color" class="img-fluid">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 mb-3">
+            <img src="./img/cream.webp" alt="Grey Black Color" class="img-fluid">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 mb-3">
+            <img src="./img/firoza.webp" alt="white Color" class="img-fluid">
+          </div>
+
+
+        </div>
+        <h3>Font We Use on this Website</h3>
+        <h5 class="sans">Sans-Serif(ABCD)</h5>
+      </div>
+    </section>
+
+    <!-- typography and color end -->
+
+    <!-- impact start -->
+    <section class="bimpact section_padding">
+      <div class="container">
+
+
+        <div class="row align-items-center g-4">
+
+          <!-- Left Image -->
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="bimpact-image">
+              <img src="./img/handshake1.webp" alt="Impact Image" class="img-fluid">
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="col-lg-7">
+            <div class="row g-4">
+              <h2 class=" bimpact-title">The Impact We Delivered</h2>
+              <!-- Card 1 -->
+              <div class="col-md-6">
+                <div class="bimpact-card">
+                  <img src="./img/Teamwork.gif" alt="">
+                  <h3>12%</h3>
+                  <p>
+                    increase in conversion rate via improved checkout flow
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-md-6">
+                <div class="bimpact-card">
+                  <img src="./img/marketing.gif" alt="" srcset="">
+                  <h3>30%</h3>
+                  <p>
+                    longer average session duration from better engagement
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-md-6">
+                <div class="bimpact-card">
+                  <img src="./img/mobilefast.gif" alt="">
+                  <h3>35%</h3>
+                  <p>
+                    growth in mobile purchases after mobile-first redesign
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- impact end -->
+    <!-- logo carousel -->
+  <section class="logo-carousel section_padding">
+      <h2 class="title">Our Clients</h2>
+ <div class="logo-wrapper">
+        <div class="logo-track">
+          <a href="kraftedtales.html"><img src="./img/kraftedtales-logo.png"
+              alt="best digital marketing company in Howrah India"></a>
+          <a href="shilpakala.html"><img src="./img/shilpakala-logo.png"
+              alt="best digital marketing agency in Howrah India"></a>
+          <a href="kanchenjaunga.html"><img src="./img/kanchenjunga-logo.png"
+              alt="best Mobile app development company in Kolkata India"></a>
+          <a href="annoor.html"><img src="./img/annoor-logo.png"
+              alt="best Mobile app development agency in Kolkata India"></a>
+          <a href="zeroto81.html"><img src="./img/zeroto81-logo.png"
+              alt="popular website development company in Kolkata India"></a>
+          <a href="banglarmisti.html"><img src="./img/banglarmisti-logo.png"
+              alt="top website development company in Kolkata India"></a>
+          <a href="wardrrobe.html"><img src="./img/warddrobe-logo.png"
+              alt="custom website development company in Kolkata India"></a>
+          <a href="sreebangi.html"><img src="./img/sribangi-logo.png"
+              alt="best web development company in Kolkata India"></a>
+          <a href="csa.html"><img src="./img/csa-logo.png" alt="best website design company in Kolkata India"></a>
+          <a href="goservice.html"><img src="./img/go-service.webp"
+              alt="best website design company in Kolkata India"></a>
+              <a href="patco.html"><img src="./img/patco-logo.png"
+              alt="best website design company in Kolkata India"></a>
+                     <a href="success.html"><img src="./img/success-logo.webp"
+              alt="best website design company in Kolkata India"></a>
+        </div>
+      </div>
+    </section>
+    <!-- logo carousel end -->
+  </main>
+  <footer>
+
+    <footer>
+
+      <section class="footer_section section_padding">
+        <div class="container">
+          <div class="row footer-row mt-5 align-items-stretch">
+
+            <div class="col-12 col-md-2 footer-col py-2">
+              <a href="#" class="footer-logo">
+                <img src="./img/digital-spiceup.webp" alt="Give Logo">
+              </a>
+              <p class="footer-tagline pb-2">
+                Empowering Brands with Digital Intelligence —
+                <span> Digital Spice Up </span> at your service.
+              </p>
+
+
+              <a href="tel:+91 90381 20150"><i class="fa-solid fa-phone"></i> +91 90381 20150</a>
+              <a href="mailto:info@digitalspiceup.com"><i class="fa-solid fa-message"></i>info@digitalspiceup.com</a>
+
+
+              <div class="footer-social-icons">
+                <div class="social-icon-group"><a href="https://www.facebook.com/profile.php?id=61552457402967"><i
+                      class="fab fa-facebook-f"></i></a></div>
+                <div class="social-icon-group"><a href="https://pin.it/5uFfr1rU5"><i
+                      class="fa-brands fa-pinterest"></i></a></div>
+                <div class="social-icon-group"><a
+                    href="https://www.linkedin.com/company/digital-marketing-company-in-india-digital-spiceup/?viewAsMember=true"><i
+                      class="fab fa-twitter"></i></a></div>
+                <div class="social-icon-group"><a href="https://www.instagram.com/digitalspiceup/"><i
+                      class="fab fa-instagram"></i></a></div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-6 col-md-3 footer-col">
+              <h2 class="footer-heading ms-5">Quick Links</h2>
+              <ul class="footer-links ms-5">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="casestudy.html">Case Study</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="col-6 col-md-3 footer-col">
+              <h2 class="footer-heading me-5">Services</h2>
+              <ul class="footer-links me-5">
+                <li><a href="web.html">Web Development</a></li>
+                <li><a href="app.html">App Development</a></li>
+                <li><a href="ui.html">UI/UX Design</a></li>
+                <li><a href="software.html">Software Development</a></li>
+                <li><a href="seo.html">Seo Marketing</a></li>
+                <li><a href="digital.html">Digital Marketing</a></li>
+                <li><a href="performance.html">Performance Marketing</a></li>
+
+              </ul>
+            </div>
+
+            <!-- Contact Form Right -->
+            <div class="col-12 col-md-4 footer-right d-flex flex-column justify-content-start">
+              <h2 class="text-white mb-3">Get in Touch</h2>
+
+              <form class="footer-contact-form w-100">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="tel" class="form-control" placeholder="Phone" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3 flex-grow-1">
+                  <textarea class="form-control h-100" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn text-dark w-100">Send</button>
+              </form>
+            </div>
+
+          </div>
+
+  
+      </div>
+    </section>
+  </footer>
+      <!-- Footer Bottom / Copyright & Top Arrow -->
+        <div class="footer-bottom-bar">
+          <p class="footer-copy mb-0">&copy; 2026 Digital Spice Up. All rights reserved.</p>
+          <!-- <a href="#" class="footer-back-to-top" id="footerBackToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" aria-label="Scroll to top" title="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a> -->
+        </div>
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="floatingBackToTop" class="floating-back-to-top" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button> 
+
+
+    <!-- footer end -->
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/casestudy.js"></script>
+    <script src="./js/back-to-top.js"></script>
+</body>
+
+</html>
